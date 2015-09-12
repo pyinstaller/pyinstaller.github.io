@@ -1,0 +1,35 @@
+
+div.container.half,
+div.section#features,
+div.section#downloads,
+div.section#documentation,
+div.section#license {
+    width:45%;
+    float:left;
+    padding-left:2em;
+    align:top;
+}
+
+div.container.half.left,
+div.section#features {
+    border-right:solid thin #CCCCBB
+}
+
+div.container.half.right,
+div.section#downloads,
+div.section#documentation,
+div.section#license {
+    border-right:solid thin #CCCCBB
+}
+
+div.container.clear,
+div.section#bug-reports {
+    clear:both;
+}
+
+body {
+    padding-top: 100px;
+    background-image: url("images/pyinstaller-draft1c-header-trans.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
