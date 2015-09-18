@@ -275,10 +275,10 @@ For information about the "core" development, including tools and
 processes, please refer to the Development_ section.
 
 
-.. _FAQ: faq.html
-.. _`If Things Go Wrong`: if-things-go-wrong.html
-.. _`How to Report Bugs`: how-to-report-bugs.html
 .. _Development: development.html
+.. _FAQ: faq.html
+.. _`How to Report Bugs`: how-to-report-bugs.html
+.. _`If Things Go Wrong`: if-things-go-wrong.html
 .. _Recipes: https://github.com/pyinstaller/pyinstaller/wiki/Recipes
 .. _`Projects using PyInstaller`: https://github.com/pyinstaller/pyinstaller/wiki/Projects-Using-PyInstaller
 .. _`Supported Packages`: https://github.com/pyinstaller/pyinstaller/wiki/Supported-Packages
