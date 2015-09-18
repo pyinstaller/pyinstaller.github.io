@@ -1,5 +1,5 @@
 
-all: index.html
+all: index.html logos/index.html
 
 
 %.html: %.rst default.css website.css
