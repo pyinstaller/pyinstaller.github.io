@@ -2,6 +2,13 @@
 Welcome to PyInstaller official website
 =============================================
 
+.. container:: sidenote bold
+
+  If you have problems to get your application running, please have a
+  look at `If Things Go Wrong`_ and `How to Report Bugs`_, which will
+  help us a lot on solving the bug.
+
+
 PyInstaller is a program that converts (packages) Python programs into
 stand-alone executables, under Windows, Linux, Mac OS X, Solaris and
 AIX. Its main advantages over similar tools are that PyInstaller

@@ -45,3 +45,14 @@ h1, h2, h3, h4, h5, h6 {
 .bold {
   font-weight: bold;
 }
+
+div.sidenote {
+    background: #ffd none repeat scroll 0 0;
+    border: 1px outset #ddc;
+    clear: right;
+    float: right;
+    margin: 0 0 2em 1em;
+    padding: 0.5em 1em;
+    position: relative;
+    width: 20%;
+}
