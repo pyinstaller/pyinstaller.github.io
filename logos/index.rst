@@ -27,7 +27,7 @@ License: GPL Copyright (c) 2005 William Caban Made with GIMP
 * `Banner with white background <pyinstaller-draft1c-header-white.png>`__
 
 
-Icons by Florina Hoech
+Icons by Florian Höch
 ========================
 
 * `pyinstaller-draft1a.ico <pyinstaller-draft1a.ico>`__ Windows icon
