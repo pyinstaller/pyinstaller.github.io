@@ -29,7 +29,7 @@ div.section#bug-reports {
 
 body {
     padding-top: 100px;
-    background-image: url("images/pyinstaller-draft1c-header-trans.png");
+    background-image: url("/logos/pyinstaller-draft1c-header-trans.png");
     background-repeat: no-repeat;
     background-position: left top;
 }
