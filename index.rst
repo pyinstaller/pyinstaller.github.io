@@ -18,7 +18,7 @@ intervention required. You'll never be required to look for tricks in
 wikis and apply custom modification to your files or your setup
 scripts. As an example, **libraries like PyQt, Django or matplotlib
 are fully supported**, without having to handle plugins or external
-data files manually. Check our compatibility list of SupportedPackages
+data files manually. Check our compatibility list of `Supported Packages`_
 for details.
 
 Feel free to join us in the effort! Please consult our Roadmap to
@@ -26,7 +26,7 @@ check our plans. Also usage reports are welcomed: let us know if
 PyInstaller works for you and how, or what problems you found in using
 it.
 
-Check our list of ProjectsUsingPyInstaller.
+Check our list of `Projects using PyInstaller`_.
 
 
 Features
@@ -58,7 +58,7 @@ Features
 
 * Explicit intelligent support for many 3rd-packages (for hidden
   imports, external data files, etc.), to make them work with
-  PyInstaller out-of-the-box (see SupportedPackages).
+  PyInstaller out-of-the-box (see `Supported Packages`_).
 
 * Full single-file EGG support: required .egg files are automatically
   inspected for dependencies and bundled, and all the egg-specific
@@ -68,8 +68,8 @@ Features
   automatically inspected for dependencies and bundled, but
   egg-specific features will not work at runtime.
 
-* Automatic support for binary libraries used through ctypes (see
-  Features/CtypesDependencySupport for details).
+* Automatic support for binary libraries used through ctypes
+  (see the `feature page <features.html#ctypes-dependency-support>`__ for details).
 
 * Support for automatic binary packing through the well-known
   `UPX compressor <http://upx.sf.net/>`_.
@@ -80,13 +80,13 @@ Features
 Windows-specific features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Support for [Features/WindowsCodeSigning code-signing
-  executables].
+* Support for `code-signing executables
+  <features.html#Windows-code-signing>`__.
 
-* Full automatic support for CRTs: no need to manually distribute
-  MSVCR*.DLL, redist installers, manifests, or anything else; *true*
-  one-file applications that work everywhere! (see
-  [wiki:Features/Python26Win])
+* `Full automatic support for CRTs <features.html#python26-win>`__: no
+  need to manually distribute MSVCR*.DLL, redist installers,
+  manifests, or anything else; *true* one-file applications that work
+  everywhere!
 
 * Selectable executable icon.
 
@@ -99,7 +99,7 @@ Windows-specific features
 Mac-specific features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Support for bundles (see Features/MacOsCompatibility)
+* `Support for bundles <features.html#mac-os-compatibility>`__
 
 
 Downloads
@@ -119,8 +119,11 @@ Latest development code `zip <https://github.com/pyinstaller/pyinstaller/zipball
 Latest development code `tar.gz <https://github.com/pyinstaller/pyinstaller/tarball/develop tar.gz>`_                                                         2.7, 3.3 - 3.4
 =========================================================================================================== ================================ ===============  =========
 
-See OldDownloads for older (obsolete) packages.
-See [wiki:PyInstallerLogos PyInstaller Logos] for marketing materials.
+See the `full list of releases
+<https://github.com/pyinstaller/pyinstaller/releases>`__ for older
+(obsolete) packages.
+
+See `PyInstaller Logos <logos>`__ for marketing materials.
 
 .. comment:
 
@@ -156,24 +159,27 @@ Documentation
   `html <http://htmlpreview.github.io/?https://github.com/pyinstaller/pyinstaller/blob/develop/doc/Manual.html>`__,
   `pdf <https://github.com/pyinstaller/pyinstaller/blob/develop/doc/Manual.pdf?raw=true>`__.
 
-* See the list of SupportedPackages
+* See the list of `Supported Packages`_
 
-* Read our [wiki:FAQ] and have a look at the [wiki:Recipe recipes].
+* Read our FAQ_ and have a look at the Recipes_.
 
 * If your packed application does not run as expected, please read
-  [wiki:FAQ#IfThingsGoWrong If Thing Go Wrong].
+  `If Things Go Wrong`_.
 
 
 License
 ==================
 
+.. role:: bolditalic
+
+
 PyInstaller is distributed under the GPL license (see the file
-[source:trunk/doc/LICENSE.GPL#latest doc/LICENSE.GPL] in the source
-code), with a *special exception* which allows to use PyInstaller
-to build and distribute non-free programs** (including commercial
-ones). In other words, you have no restrictions in **using**
-PyInstaller as-is, but any kind of **modifications** to it will have
-to comply with the GPL license. See also our [wiki:FAQ FAQ].
+`doc/LICENSE.GPL <https://github.com/pyinstaller/pyinstaller/blob/develop/doc/LICENCE.GPL?raw=true>`_
+in the source code), with a :bolditalic:`special exception` **which allows to use
+PyInstaller to build and distribute non-free programs** (including
+commercial ones). In other words, you have no restrictions in
+**using** PyInstaller as-is, but any kind of **modifications** to it
+will have to comply with the GPL license. See also our FAQ_.
 
 
 
@@ -181,8 +187,11 @@ to comply with the GPL license. See also our [wiki:FAQ FAQ].
 Bug reports
 ================
 
-**Please have a look at [wiki:FAQ#IfThingsGoWrong the FAQ] and
-HowtoReportBugs, which will help us a lot on solving the bug.**
+.. container:: bold
+
+  If you have problems to get your application running, please have a
+  look at `If Things Go Wrong`_ and `How to Report Bugs`_, which will
+  help us a lot on solving the bug.
 
 Look at the `list of open bugs
 <https://github.com/pyinstaller/pyinstaller/issues>`_. You can report
@@ -248,11 +257,21 @@ Please note: development for PyInstaller 3.0 is currently done on the
 Contributions
 ================
 
-We are happy about contributions. [[Development/HowtoContribute]] should
+We are happy about contributions. `How to Contribute <how-to-contribute.html>`__ should
 provide all information you need.
+
 
 Development
 =================
 
 For information about the "core" development, including tools and
-processes, please refer to the [[Development]]-section.
+processes, please refer to the Development_ section.
+
+
+.. _FAQ: faq.html
+.. _`If Things Go Wrong`: if-things-go-wrong.html
+.. _`How to Report Bugs`: how-to-report-bugs.html
+.. _Development: development.html
+.. _Recipes: https://github.com/pyinstaller/pyinstaller/wiki/Recipes
+.. _`Projects using PyInstaller`: https://github.com/pyinstaller/pyinstaller/wiki/Projects-Using-PyInstaller
+.. _`Supported Packages`: https://github.com/pyinstaller/pyinstaller/wiki/Supported-Packages
