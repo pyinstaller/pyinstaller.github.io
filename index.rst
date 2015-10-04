@@ -9,10 +9,10 @@ Welcome to PyInstaller official website
   help us a lot on solving the bug.
 
 
-PyInstaller is a program that converts (packages) Python programs into
-stand-alone executables, under Windows, Linux, Mac OS X, Solaris and
-AIX. Its main advantages over similar tools are that PyInstaller
-works with any version of Python since 2.4, it builds smaller
+PyInstaller is a program that freezes (packages) Python programs into
+stand-alone executables, under Windows, Linux, Mac OS X, FreeBSD,
+Solaris and AIX. Its main advantages over similar tools are that
+PyInstaller works with Python 2.7 and 3.3—3.5, it builds smaller
 executables thanks to transparent compression, it is fully
 multi-platform, and use the OS support to load the dynamic libraries,
 thus ensuring full compatibility.
@@ -47,9 +47,9 @@ Features
   - Windows (32-bit and 64-bit),
   - Linux (32-bit and 64-bit),
   - Mac OS X (32-bit and 64-bit),
-  - experimentally Solaris and AIX.
+  - contributed suppport for FreeBSD, Solaris and AIX.
 
-* Multiversion: works under any version of Python from 2.4 up to 2.7.
+* Multiversion: supports Python 2.7 and Python 3.3, 3.4 and 3.5.
 
 * Flexible packaging mode:
 
@@ -67,13 +67,9 @@ Features
   imports, external data files, etc.), to make them work with
   PyInstaller out-of-the-box (see `Supported Packages`_).
 
-* Full single-file EGG support: required .egg files are automatically
+* Full egg support: required .egg files are automatically
   inspected for dependencies and bundled, and all the egg-specific
   features are supported at runtime as well (entry points, etc.).
-
-* Partial directory EGG support: required .egg directories are
-  automatically inspected for dependencies and bundled, but
-  egg-specific features will not work at runtime.
 
 * Automatic support for binary libraries used through ctypes
   (see the `feature page <features.html#ctypes-dependency-support>`__ for details).
@@ -112,23 +108,33 @@ Mac-specific features
 Downloads
 ================
 
-The latest stable release of PyInstaller is 2.1
-(`Change Log <https://github.com/pyinstaller/pyinstaller/releases/tag/v2.1>`_).
+The latest stable release of PyInstaller is 3.0
+(`Change Log <https://github.com/pyinstaller/pyinstaller/releases/tag/v3.0>`_).
 
-=========================================================================================================== ================================ ===============  =========
-File                                                                                                        MD5                              Description      Python Version
-=========================================================================================================== ================================ ===============  =========
-**Release 2.1**
-`PyInstaller 2.1 (tar.bz2) <https://pypi.python.org/packages/source/P/PyInstaller/PyInstaller-2.1.tar.gz>`_ 248531f6fc94b0ffb02473321496d6d0 Stable Release   2.4 - 2.7
-`PyInstaller 2.1 (zip) <https://pypi.python.org/packages/source/P/PyInstaller/PyInstaller-2.1.zip>`_        3eb18a454311707ab7808d881e677329 Stable Release   2.4 - 2.7
-**Development**
-Latest development code `zip <https://github.com/pyinstaller/pyinstaller/zipball/develop>`_                                                                   2.7, 3.3 - 3.4
-Latest development code `tar.gz <https://github.com/pyinstaller/pyinstaller/tarball/develop tar.gz>`_                                                         2.7, 3.3 - 3.4
-=========================================================================================================== ================================ ===============  =========
+
+* **Release 3.0**:
+
+  Stable, supports Python 2.7, 3.3–3.5
+
+  - `PyInstaller 3.0 (tar.bz2)`__ (sha-256: xxxxx)
+  - `PyInstaller 3.0 (zip)`__ (sha-256: xxxxx)
+
+  __ https://pypi.python.org/packages/source/P/PyInstaller/PyInstaller-3.0.tar.gz
+  __ https://pypi.python.org/packages/source/P/PyInstaller/PyInstaller-3.0.zip
+
+
+* **Development**: supports Python 2.7, 3.3–3.5
+
+  - `Current development code (tar.gz)`__
+  - `Current development code (zip)`__
+
+  __ https://github.com/pyinstaller/pyinstaller/tarball/develop
+  __ https://github.com/pyinstaller/pyinstaller/zipball/develop
+
 
 See the `full list of releases
 <https://github.com/pyinstaller/pyinstaller/releases>`__ for older
-(obsolete) packages.
+(obsolete) releases.
 
 See `PyInstaller Logos <logos>`__ for marketing materials.
 
@@ -158,9 +164,9 @@ See `PyInstaller Logos <logos>`__ for marketing materials.
 Documentation
 ================
 
-* Documentation for version 2.1:
+* Documentation for version 3.0:
   `html <http://pythonhosted.org/PyInstaller/>`__,
-  `pdf <http://sourceforge.net/projects/pyinstaller/files/2.1/Manual.pdf/download>`__
+  `pdf <https://github.com/pyinstaller/pyinstaller/blob/3.0/doc/Manual.pdf?raw=true>`__
 
 * Manual for development version:
   `html <http://htmlpreview.github.io/?https://github.com/pyinstaller/pyinstaller/blob/develop/doc/Manual.html>`__,
@@ -211,10 +217,14 @@ Maintainers
 ================
 
 
-* PyInstaller is currently maintained by
-  `Giovanni Bajo <http://giovanni.bajo.it>`_ (rasky@develer.com,
-  `@giovannibajo <http://twitter.com/giovannibajo>`_), Martin Zibricky and
-  `Hartmut Goebel <http://www.crazy-compilers.com>`_.
+* PyInstaller is currently maintained by Martin Zibricky, `Hartmut
+  Goebel <http://www.crazy-compilers.com>`_, David Cortesi and David
+  Vierra.
+
+  The project was founded by `Giovanni Bajo
+  <http://giovanni.bajo.it>`_ (rasky@develer.com, `@giovannibajo
+  <http://twitter.com/giovannibajo>`_).
+  Installer.
 
 We would like to thank Gordon McMillan who wrote the original Python
 Installer, and William Caban for his initial development and
@@ -256,9 +266,6 @@ Git Repository
 * Or you may check out the current version by running::
 
     git clone git://github.com/pyinstaller/pyinstaller.git
-
-Please note: development for PyInstaller 3.0 is currently done on the
-"python3" branch until it is stable enough.
 
 
 Contributions
