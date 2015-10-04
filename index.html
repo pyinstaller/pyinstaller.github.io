@@ -614,10 +614,10 @@ div.sidenote {
 If you have problems to get your application running, please have a
 look at <a class="reference external" href="if-things-go-wrong.html">If Things Go Wrong</a> and <a class="reference external" href="how-to-report-bugs.html">How to Report Bugs</a>, which will
 help us a lot on solving the bug.</div>
-<p>PyInstaller is a program that converts (packages) Python programs into
-stand-alone executables, under Windows, Linux, Mac OS X, Solaris and
-AIX. Its main advantages over similar tools are that PyInstaller
-works with any version of Python since 2.4, it builds smaller
+<p>PyInstaller is a program that freezes (packages) Python programs into
+stand-alone executables, under Windows, Linux, Mac OS X, FreeBSD,
+Solaris and AIX. Its main advantages over similar tools are that
+PyInstaller works with Python 2.7 and 3.3—3.5, it builds smaller
 executables thanks to transparent compression, it is fully
 multi-platform, and use the OS support to load the dynamic libraries,
 thus ensuring full compatibility.</p>
@@ -645,10 +645,10 @@ on computers without Python installed.</li>
 <li>Windows (32-bit and 64-bit),</li>
 <li>Linux (32-bit and 64-bit),</li>
 <li>Mac OS X (32-bit and 64-bit),</li>
-<li>experimentally Solaris and AIX.</li>
+<li>contributed suppport for FreeBSD, Solaris and AIX.</li>
 </ul>
 </li>
-<li>Multiversion: works under any version of Python from 2.4 up to 2.7.</li>
+<li>Multiversion: supports Python 2.7 and Python 3.3, 3.4 and 3.5.</li>
 <li>Flexible packaging mode:<ul>
 <li>Single directory: build a directory containing an executable plus
 all the external binary modules (.dll, .pyd, .so) used by the
@@ -662,12 +662,9 @@ mode you want through a simple script file in Python.</li>
 <li>Explicit intelligent support for many 3rd-packages (for hidden
 imports, external data files, etc.), to make them work with
 PyInstaller out-of-the-box (see <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/wiki/Supported-Packages">Supported Packages</a>).</li>
-<li>Full single-file EGG support: required .egg files are automatically
+<li>Full egg support: required .egg files are automatically
 inspected for dependencies and bundled, and all the egg-specific
 features are supported at runtime as well (entry points, etc.).</li>
-<li>Partial directory EGG support: required .egg directories are
-automatically inspected for dependencies and bundled, but
-egg-specific features will not work at runtime.</li>
 <li>Automatic support for binary libraries used through ctypes
 (see the <a class="reference external" href="features.html#ctypes-dependency-support">feature page</a> for details).</li>
 <li>Support for automatic binary packing through the well-known
@@ -698,57 +695,25 @@ executable.</li>
 </div>
 <div class="section" id="downloads">
 <h1>Downloads</h1>
-<p>The latest stable release of PyInstaller is 2.1
-(<a class="reference external" href="https://github.com/pyinstaller/pyinstaller/releases/tag/v2.1">Change Log</a>).</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="64%" />
-<col width="19%" />
-<col width="9%" />
-<col width="8%" />
-</colgroup>
-<thead valign="bottom">
-<tr><th class="head">File</th>
-<th class="head">MD5</th>
-<th class="head">Description</th>
-<th class="head">Python Version</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr><td><strong>Release 2.1</strong></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr><td><a class="reference external" href="https://pypi.python.org/packages/source/P/PyInstaller/PyInstaller-2.1.tar.gz">PyInstaller 2.1 (tar.bz2)</a></td>
-<td>248531f6fc94b0ffb02473321496d6d0</td>
-<td>Stable Release</td>
-<td>2.4 - 2.7</td>
-</tr>
-<tr><td><a class="reference external" href="https://pypi.python.org/packages/source/P/PyInstaller/PyInstaller-2.1.zip">PyInstaller 2.1 (zip)</a></td>
-<td>3eb18a454311707ab7808d881e677329</td>
-<td>Stable Release</td>
-<td>2.4 - 2.7</td>
-</tr>
-<tr><td><strong>Development</strong></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr><td>Latest development code <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/zipball/develop">zip</a></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>2.7, 3.3 - 3.4</td>
-</tr>
-<tr><td>Latest development code <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/tarball/developtar.gz">tar.gz</a></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>2.7, 3.3 - 3.4</td>
-</tr>
-</tbody>
-</table>
+<p>The latest stable release of PyInstaller is 3.0
+(<a class="reference external" href="https://github.com/pyinstaller/pyinstaller/releases/tag/3.0">Change Log</a>).</p>
+<ul>
+<li><p class="first"><strong>Release 3.0</strong>:</p>
+<p>Stable, supports Python 2.7, 3.3–3.5</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/pyinstaller/pyinstaller/releases/download/3.0/PyInstaller-3.0.tar.gz">PyInstaller 3.0 (tar.gz)</a> (sha-256: 8f9f9836ffebe71f9d9ced24001f8b27c0492574ed12a7a97c2c8810fb3fa210)</li>
+<li><a class="reference external" href="https://github.com/pyinstaller/pyinstaller/releases/download/3.0/PyInstaller-3.0.zip">PyInstaller 3.0 (zip)</a> (sha-256: 9e3d5c5c1bbf30e4252cea3f7cb4bfdac779e2f481e739da190eb71dd1946169)</li>
+</ul>
+</li>
+<li><p class="first"><strong>Development</strong>: supports Python 2.7, 3.3–3.5</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/pyinstaller/pyinstaller/tarball/develop">Current development code (tar.gz)</a></li>
+<li><a class="reference external" href="https://github.com/pyinstaller/pyinstaller/zipball/develop">Current development code (zip)</a></li>
+</ul>
+</li>
+</ul>
 <p>See the <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/releases">full list of releases</a> for older
-(obsolete) packages.</p>
+(obsolete) releases.</p>
 <p>See <a class="reference external" href="logos">PyInstaller Logos</a> for marketing materials.</p>
 <!-- comment:
 
@@ -774,9 +739,9 @@ For a more detailed walkthrough, see the `manual
 <div class="section" id="documentation">
 <h1>Documentation</h1>
 <ul class="simple">
-<li>Documentation for version 2.1:
+<li>Documentation for version 3.0:
 <a class="reference external" href="http://pythonhosted.org/PyInstaller/">html</a>,
-<a class="reference external" href="http://sourceforge.net/projects/pyinstaller/files/2.1/Manual.pdf/download">pdf</a></li>
+<a class="reference external" href="https://github.com/pyinstaller/pyinstaller/blob/3.0/doc/Manual.pdf?raw=true">pdf</a></li>
 <li>Manual for development version:
 <a class="reference external" href="http://htmlpreview.github.io/?https://github.com/pyinstaller/pyinstaller/blob/develop/doc/Manual.html">html</a>,
 <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/blob/develop/doc/Manual.pdf?raw=true">pdf</a>.</li>
@@ -809,11 +774,13 @@ notifications.</p>
 </div>
 <div class="section" id="maintainers">
 <h1>Maintainers</h1>
-<ul class="simple">
-<li>PyInstaller is currently maintained by
-<a class="reference external" href="http://giovanni.bajo.it">Giovanni Bajo</a> (<a class="reference external" href="mailto:rasky&#64;develer.com">rasky&#64;develer.com</a>,
-<a class="reference external" href="http://twitter.com/giovannibajo">&#64;giovannibajo</a>), Martin Zibricky and
-<a class="reference external" href="http://www.crazy-compilers.com">Hartmut Goebel</a>.</li>
+<ul>
+<li><p class="first">PyInstaller is currently maintained by Martin Zibricky, <a class="reference external" href="http://www.crazy-compilers.com">Hartmut
+Goebel</a>, David Cortesi and David
+Vierra.</p>
+<p>The project was founded by <a class="reference external" href="http://giovanni.bajo.it">Giovanni Bajo</a> (<a class="reference external" href="mailto:rasky&#64;develer.com">rasky&#64;develer.com</a>, <a class="reference external" href="http://twitter.com/giovannibajo">&#64;giovannibajo</a>).
+Installer.</p>
+</li>
 </ul>
 <p>We would like to thank Gordon McMillan who wrote the original Python
 Installer, and William Caban for his initial development and
@@ -851,8 +818,6 @@ git clone git://github.com/pyinstaller/pyinstaller.git
 </pre>
 </li>
 </ul>
-<p>Please note: development for PyInstaller 3.0 is currently done on the
-&quot;python3&quot; branch until it is stable enough.</p>
 </div>
 <div class="section" id="contributions">
 <h1>Contributions</h1>
