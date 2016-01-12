@@ -109,7 +109,7 @@ Downloads
 ================
 
 The latest stable release of PyInstaller is 3.1
-(`Change Log <https://github.com/pyinstaller/pyinstaller/releases/tag/3.1>`_).
+(`Change Log <https://github.com/pyinstaller/pyinstaller/releases/tag/v3.1>`_).
 
 
 * **Release 3.1**:
@@ -119,8 +119,8 @@ The latest stable release of PyInstaller is 3.1
   - `PyInstaller 3.1 (tar.gz)`__ (sha-256: 5a28c3bb9d23ea644f9dc9e561e66471b83258d44063bcb108dfbbfe4af3c02b)
   - `PyInstaller 3.1 (zip)`__ (sha-256: 70be0d85e23c10bc016e9550d0686053ec00b97693291374282259cdd02d734b)
 
-  __ https://github.com/pyinstaller/pyinstaller/releases/download/3.1/PyInstaller-3.1.tar.gz
-  __ https://github.com/pyinstaller/pyinstaller/releases/download/3.1/PyInstaller-3.1.zip
+  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.1/PyInstaller-3.1.tar.gz
+  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.1/PyInstaller-3.1.zip
 
 
 * **Development**: supports Python 2.7, 3.3–3.5
@@ -166,7 +166,7 @@ Documentation
 
 * Documentation for version 3.1:
   `html <http://pythonhosted.org/PyInstaller/>`__,
-  `pdf <https://github.com/pyinstaller/pyinstaller/blob/3.1/doc/Manual.pdf?raw=true>`__
+  `pdf <https://github.com/pyinstaller/pyinstaller/blob/v3.1/doc/Manual.pdf?raw=true>`__
 
 * Manual for development version:
   `html <http://htmlpreview.github.io/?https://github.com/pyinstaller/pyinstaller/blob/develop/doc/Manual.html>`__,
