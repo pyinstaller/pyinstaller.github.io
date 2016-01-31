@@ -108,19 +108,19 @@ Mac-specific features
 Downloads
 ================
 
-The latest stable release of PyInstaller is 3.1
-(`Change Log <https://github.com/pyinstaller/pyinstaller/releases/tag/v3.1>`_).
+The latest stable release of PyInstaller is 3.1.1.
+(`Change Log <https://github.com/pyinstaller/pyinstaller/releases/tag/v3.1.1>`_).
 
 
-* **Release 3.1**:
+* **Release 3.1.1**:
 
   Stable, supports Python 2.7, 3.3–3.5
 
-  - `PyInstaller 3.1 (tar.gz)`__ (sha-256: 5a28c3bb9d23ea644f9dc9e561e66471b83258d44063bcb108dfbbfe4af3c02b)
-  - `PyInstaller 3.1 (zip)`__ (sha-256: 70be0d85e23c10bc016e9550d0686053ec00b97693291374282259cdd02d734b)
+  - `PyInstaller 3.1.1 (tar.gz)`__ (sha-256: b111d35d836237bf954e9b47dcb338da48a40210c318b2b0bc163dba8ca8e096)
+  - `PyInstaller 3.1.1 (zip)`__ (sha-256: 7b3d9884cd806b31570950c5d9ad4aaaac1bbe9f374ab3d10e61f9f499642910)
 
-  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.1/PyInstaller-3.1.tar.gz
-  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.1/PyInstaller-3.1.zip
+  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.1.1/PyInstaller-3.1.1.tar.gz
+  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.1.1/PyInstaller-3.1.1.zip
 
 
 * **Development**: supports Python 2.7, 3.3–3.5
@@ -164,9 +164,9 @@ See `PyInstaller Logos <logos>`__ for marketing materials.
 Documentation
 ================
 
-* Documentation for version 3.1:
+* Documentation for version 3.1.1:
   `html <http://pythonhosted.org/PyInstaller/>`__,
-  `pdf <https://github.com/pyinstaller/pyinstaller/blob/v3.1/doc/Manual.pdf?raw=true>`__
+  `pdf <https://github.com/pyinstaller/pyinstaller/blob/v3.1.1/doc/Manual.pdf?raw=true>`__
 
 * Manual for development version:
   `html <http://htmlpreview.github.io/?https://github.com/pyinstaller/pyinstaller/blob/develop/doc/Manual.html>`__,
