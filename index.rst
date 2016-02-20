@@ -96,8 +96,6 @@ Windows-specific features
 * Fully configurable version resource section and manifests in
   executable.
 
-* Support for building COM servers.
-
 
 Mac-specific features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
