@@ -167,8 +167,8 @@ Documentation
   `pdf <https://github.com/pyinstaller/pyinstaller/blob/v3.1.1/doc/Manual.pdf?raw=true>`__
 
 * Manual for development version:
-  `html <http://htmlpreview.github.io/?https://github.com/pyinstaller/pyinstaller/blob/develop/doc/Manual.html>`__,
-  `pdf <https://github.com/pyinstaller/pyinstaller/blob/develop/doc/Manual.pdf?raw=true>`__.
+  `html <https://pyinstaller.rtfd.org/latest/>`__,
+  `pdf <https://media.rtfd.org/pdf/pyinstaller/latest/pyinstaller.pdf>`__.
 
 * See the list of `Supported Packages`_
 
