@@ -106,19 +106,19 @@ Mac-specific features
 Downloads
 ================
 
-The latest stable release of PyInstaller is 3.1.1.
-(`Change Log <https://github.com/pyinstaller/pyinstaller/releases/tag/v3.1.1>`_).
+The latest stable release of PyInstaller is 3.2.
+(`Change Log <https://pyinstaller.rtfd.io/en/latest/CHANGES.html>`_).
 
 
-* **Release 3.1.1**:
+* **Release 3.2**:
 
   Stable, supports Python 2.7, 3.3–3.5
 
-  - `PyInstaller 3.1.1 (tar.gz)`__ (sha-256: b111d35d836237bf954e9b47dcb338da48a40210c318b2b0bc163dba8ca8e096)
-  - `PyInstaller 3.1.1 (zip)`__ (sha-256: 7b3d9884cd806b31570950c5d9ad4aaaac1bbe9f374ab3d10e61f9f499642910)
+  - `PyInstaller 3.2 (tar.gz)`__ (sha-256: 7598d4c9f5712ba78beb46a857a493b1b93a584ca59944b8e7b6be00bb89cabc)
+  - `PyInstaller 3.2 (zip)`__ (sha-256: e27ad7e840d49924f375d3ffa4e0d67b9340f4d78c8279378dd5f4a89dbf6318)
 
-  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.1.1/PyInstaller-3.1.1.tar.gz
-  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.1.1/PyInstaller-3.1.1.zip
+  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.2/PyInstaller-3.2.tar.gz
+  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.2/PyInstaller-3.2.zip
 
 
 * **Development**: supports Python 2.7, 3.3–3.5
@@ -155,20 +155,20 @@ See `PyInstaller Logos <logos>`__ for marketing materials.
   This will generate the bundle in a subdirectory called ``dist``.
 
   For a more detailed walkthrough, see the `manual
-  <http://pythonhosted.org/PyInstaller/>`_].
+  <http://pyinstaller.rtfd.io/>`_].
 
 
 
 Documentation
 ================
 
-* Documentation for version 3.1.1:
-  `html <http://pythonhosted.org/PyInstaller/>`__,
-  `pdf <https://github.com/pyinstaller/pyinstaller/blob/v3.1.1/doc/Manual.pdf?raw=true>`__
+* Documentation for version 3.2:
+  `html <https://pyinstaller.rtfd.io/>`__,
+  `pdf <https://rtfd.io/projects/pyinstaller/downloads/pdf/stable/>`__
 
 * Manual for development version:
-  `html <https://pyinstaller.rtfd.org/latest/>`__,
-  `pdf <https://media.rtfd.org/pdf/pyinstaller/latest/pyinstaller.pdf>`__.
+  `html <https://pyinstaller.rtfd.io/latest/>`__,
+  `pdf <https://rtfd.io/projects/pyinstaller/downloads/pdf/latest/>`__.
 
 * See the list of `Supported Packages`_
 
