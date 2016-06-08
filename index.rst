@@ -107,7 +107,7 @@ Downloads
 ================
 
 The latest stable release of PyInstaller is 3.2.
-(`Change Log <https://pyinstaller.rtfd.io/en/latest/CHANGES.html>`_).
+(`Change Log <https://pyinstaller.readthedocs.io/en/latest/CHANGES.html>`_).
 
 
 * **Release 3.2**:
@@ -155,7 +155,7 @@ See `PyInstaller Logos <logos>`__ for marketing materials.
   This will generate the bundle in a subdirectory called ``dist``.
 
   For a more detailed walkthrough, see the `manual
-  <http://pyinstaller.rtfd.io/>`_].
+  <https://pyinstaller.readthedocs.io/>`_].
 
 
 
@@ -163,11 +163,11 @@ Documentation
 ================
 
 * Documentation for version 3.2:
-  `html <https://pyinstaller.rtfd.io/>`__,
+  `html <https://pyinstaller.readthedocs.io/>`__,
   `pdf <https://rtfd.io/projects/pyinstaller/downloads/pdf/stable/>`__
 
 * Manual for development version:
-  `html <https://pyinstaller.rtfd.io/latest/>`__,
+  `html <https://pyinstaller.readthedocs.io/latest/>`__,
   `pdf <https://rtfd.io/projects/pyinstaller/downloads/pdf/latest/>`__.
 
 * See the list of `Supported Packages`_
