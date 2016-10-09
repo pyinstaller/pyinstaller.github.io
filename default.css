@@ -58,7 +58,7 @@ h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visit
 h2 a:hover::after, h3 a:hover::after {
 	color: red;
 	content: " back to contents";
-	text-decoration: unterline;
+	text-decoration: underline;
 	font-size: x-small;
 	margin-left: 1em;
 }
