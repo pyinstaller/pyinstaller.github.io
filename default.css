@@ -16,10 +16,10 @@ tt, span.literal {
 }
 
 div.document {
-	padding-left: 2em;
-	padding-right: 2em;
-	padding: 0 20px 30px;
+	margin-left: 2em;
+	margin-right: 2em;
 }
+
 dl, table {
 	margin-left: 2em;
 	margin-right: 2em;
@@ -27,17 +27,17 @@ dl, table {
 
 h1, h2, h3, h4, h5, h6 {
     background-color: #F2F2F2;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: thin solid #CCCCCC;
     color: #20435C !important;
     font-family: 'Trebuchet MS',sans-serif;
     font-weight: normal;
-    margin: 20px -20px 10px;
-    padding: 3px 0 3px 10px;
+    padding: 3px 0 3px 1em;
 }
 
 h1 {
 	text-align: center;
 	font-variant: small-caps;
+	padding: 0;
 }
 div#contents p.topic-title.first {
 	font-size: large;
@@ -154,8 +154,6 @@ pre {
   color: #333333;
   line-height: 120%;
   padding: 0.5em;
-  margin-left: 4em;
-  margin-right: 4em;
   font-family: monospace;
   font-size: 0.95em;
 }
