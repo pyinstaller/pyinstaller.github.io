@@ -75,7 +75,7 @@ Features
   (see the `feature page <features.html#ctypes-dependency-support>`__ for details).
 
 * Support for automatic binary packing through the well-known
-  `UPX compressor <http://upx.sf.net/>`_.
+  `UPX compressor <https://upx.github.io/>`_.
 
 * Optional console mode (see standard output and standard error at
   runtime).
