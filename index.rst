@@ -251,7 +251,7 @@ Source Code Repository
 
 * Or you may check out the current version by running::
 
-    git clone git://github.com/pyinstaller/pyinstaller.git
+    git clone https://github.com/pyinstaller/pyinstaller.git
 
 
 If you are interested in the "core" development, including tools and
