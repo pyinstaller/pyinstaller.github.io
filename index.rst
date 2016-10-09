@@ -206,11 +206,11 @@ Mailing List
 ~~~~~~~~~~~~~~~~
 
 * `PyInstaller Mailing List
-  <http://groups-beta.google.com/group/PyInstaller>`_,
+  <https://groupsgoogle.com/group/PyInstaller>`_,
   also available at
-  `Gmane <http://dir.gmane.org/gmane.comp.python.pyinstaller>`_,
+  `Gmane <https://dir.gmane.org/gmane.comp.python.pyinstaller>`_,
   `The Mail Archive
-  <http://www.mail-archive.com/pyinstaller@googlegroups.com/>`_ and
+  <https://www.mail-archive.com/pyinstaller@googlegroups.com/>`_ and
   `Nabble <http://pyinstaller.47505.n6.nabble.com/>`_
 
 * To subscribe to the mailing list, send an empty e-mail to
@@ -222,9 +222,9 @@ Mailing List
 IRC Channel
 ~~~~~~~~~~~~~~~~
 
-* IRC channel **#pyinstaller** at `freenode <http://freenode.net/>`_
+* IRC channel **#pyinstaller** at `freenode <https://freenode.net/>`_
   also available online at `IRC webchat
-  <http://webchat.freenode.net/?channels=pyinstaller&prompt=1>`_
+  <https://webchat.freenode.net/?channels=pyinstaller&prompt=1>`_
 
 
 Bug reports
