@@ -356,10 +356,10 @@ tt, span.literal {
 }
 
 div.document {
-	padding-left: 2em;
-	padding-right: 2em;
-	padding: 0 20px 30px;
+	margin-left: 2em;
+	margin-right: 2em;
 }
+
 dl, table {
 	margin-left: 2em;
 	margin-right: 2em;
@@ -367,17 +367,17 @@ dl, table {
 
 h1, h2, h3, h4, h5, h6 {
     background-color: #F2F2F2;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: thin solid #CCCCCC;
     color: #20435C !important;
     font-family: 'Trebuchet MS',sans-serif;
     font-weight: normal;
-    margin: 20px -20px 10px;
-    padding: 3px 0 3px 10px;
+    padding: 3px 0 3px 1em;
 }
 
 h1 {
 	text-align: center;
 	font-variant: small-caps;
+	padding: 0;
 }
 div#contents p.topic-title.first {
 	font-size: large;
@@ -398,7 +398,7 @@ h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visit
 h2 a:hover::after, h3 a:hover::after {
 	color: red;
 	content: " back to contents";
-	text-decoration: unterline;
+	text-decoration: underline;
 	font-size: x-small;
 	margin-left: 1em;
 }
@@ -494,8 +494,6 @@ pre {
   color: #333333;
   line-height: 120%;
   padding: 0.5em;
-  margin-left: 4em;
-  margin-right: 4em;
   font-family: monospace;
   font-size: 0.95em;
 }
@@ -550,27 +548,68 @@ div.container.half,
 div.section#features,
 div.section#downloads,
 div.section#documentation,
-div.section#license {
-    width:45%;
-    float:left;
-    padding-left:2em;
-    align:top;
+div.section#license,
+div.section#support,
+div.section#development {
+    width: 47%;
+    float: left;
+    vertical-align:top;
+}
+
+div.section {
+    border-left:solid thin #CCCCBB;
+    border-right:solid thin #CCCCBB;
+}
+
+div.section > div.section {
+    border-left: none;
+    border-right: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+div.section > div,
+div.section > p {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+div.section > ul {
+    margin-right: 0.5em;
+}
+
+div.section + h1 {
+    padding-left: -0.5em;
+    padding-right: -0.5em;
 }
 
 div.container.half.left,
-div.section#features {
-    border-right:solid thin #CCCCBB
+div.section#features,
+div.section#support {
+    margin-right: 2em;
+}
+
+div.section#features h1,
+div.section#downloads h1,
+div.section#support h1,
+div.section#development h1 {
+    margin-top: 0
+}
+
+div.section#support,
+div.section#development {
+    margin-top: 2em;
 }
 
 div.container.half.right,
 div.section#downloads,
 div.section#documentation,
-div.section#license {
-    border-right:solid thin #CCCCBB
+div.section#license,
+div.section#development {
 }
 
 div.container.clear,
-div.section#bug-reports {
+div.section#support {
     clear:both;
 }
 
@@ -579,10 +618,6 @@ body {
     background-image: url("/logos/pyinstaller-draft1c-header-trans.png");
     background-repeat: no-repeat;
     background-position: left top;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin-right: 10px;
 }
 
 .bolditalic {
@@ -602,6 +637,11 @@ div.sidenote {
     padding: 0.5em 1em;
     position: relative;
     width: 20%;
+}
+
+pre.literal-block {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 </style>
@@ -668,7 +708,7 @@ features are supported at runtime as well (entry points, etc.).</li>
 <li>Automatic support for binary libraries used through ctypes
 (see the <a class="reference external" href="features.html#ctypes-dependency-support">feature page</a> for details).</li>
 <li>Support for automatic binary packing through the well-known
-<a class="reference external" href="http://upx.sf.net/">UPX compressor</a>.</li>
+<a class="reference external" href="https://upx.github.io/">UPX compressor</a>.</li>
 <li>Optional console mode (see standard output and standard error at
 runtime).</li>
 </ul>
@@ -760,19 +800,61 @@ commercial ones). In other words, you have no restrictions in
 <strong>using</strong> PyInstaller as-is, but any kind of <strong>modifications</strong> to it
 will have to comply with the GPL license. See also our <a class="reference external" href="faq.html">FAQ</a>.</p>
 </div>
-<div class="section" id="bug-reports">
-<h1>Bug reports</h1>
+<div class="section" id="support">
+<h1>Support</h1>
 <div class="bold container">
 If you have problems to get your application running, please have a
 look at <a class="reference external" href="if-things-go-wrong.html">If Things Go Wrong</a> and <a class="reference external" href="how-to-report-bugs.html">How to Report Bugs</a>, which will
 help us a lot on solving the bug.</div>
+<div class="section" id="mailing-list">
+<h2>Mailing List</h2>
+<ul class="simple">
+<li><a class="reference external" href="https://groupsgoogle.com/group/PyInstaller">PyInstaller Mailing List</a>,
+also available at
+<a class="reference external" href="https://dir.gmane.org/gmane.comp.python.pyinstaller">Gmane</a>,
+<a class="reference external" href="https://www.mail-archive.com/pyinstaller&#64;googlegroups.com/">The Mail Archive</a> and
+<a class="reference external" href="http://pyinstaller.47505.n6.nabble.com/">Nabble</a></li>
+<li>To subscribe to the mailing list, send an empty e-mail to
+<a class="reference external" href="mailto:pyinstaller+subscribe&#64;googlegroups.com">pyinstaller+subscribe&#64;googlegroups.com</a> (you don't need a
+Google Account nor GMail! It's just a regular mailing list, use any
+e-mail address you wish).</li>
+</ul>
+</div>
+<div class="section" id="irc-channel">
+<h2>IRC Channel</h2>
+<ul class="simple">
+<li>IRC channel <strong>#pyinstaller</strong> at <a class="reference external" href="https://freenode.net/">freenode</a>
+also available online at <a class="reference external" href="https://webchat.freenode.net/?channels=pyinstaller&amp;prompt=1">IRC webchat</a></li>
+</ul>
+</div>
+<div class="section" id="bug-reports">
+<h2>Bug reports</h2>
 <p>Look at the <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/issues">list of open bugs</a>. You can report
 bugs either anonymously or after registering to this website. If you
 register, you will be able to followup on the tickets and receive
 notifications.</p>
 </div>
+</div>
+<div class="section" id="development">
+<h1>Development</h1>
+<p>We are happy about contributions. <a class="reference external" href="how-to-contribute.html">How to Contribute</a> should
+provide all information you need.</p>
+<div class="section" id="source-code-repository">
+<h2>Source Code Repository</h2>
+<ul>
+<li><p class="first">You may browse the current repostory at the <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/">Repository Browser</a>.</p>
+</li>
+<li><p class="first">Or you may check out the current version by running:</p>
+<pre class="literal-block">
+git clone https://github.com/pyinstaller/pyinstaller.git
+</pre>
+</li>
+</ul>
+<p>If you are interested in the &quot;core&quot; development, including tools and
+processes, please refer to the <a class="reference external" href="development.html">Development</a> section.</p>
+</div>
 <div class="section" id="maintainers">
-<h1>Maintainers</h1>
+<h2>Maintainers</h2>
 <ul>
 <li><p class="first">PyInstaller is currently maintained by Martin Zibricky, <a class="reference external" href="http://www.crazy-compilers.com">Hartmut
 Goebel</a>, David Cortesi and David
@@ -785,48 +867,6 @@ Installer.</p>
 Installer, and William Caban for his initial development and
 maintenance effort without which PyInstaller would not exist today.</p>
 </div>
-<div class="section" id="mailing-list">
-<h1>Mailing List</h1>
-<ul class="simple">
-<li><a class="reference external" href="http://groups-beta.google.com/group/PyInstaller">PyInstaller Mailing List</a>,
-also available at
-<a class="reference external" href="http://dir.gmane.org/gmane.comp.python.pyinstaller">Gmane</a>,
-<a class="reference external" href="http://www.mail-archive.com/pyinstaller&#64;googlegroups.com/">The Mail Archive</a> and
-<a class="reference external" href="http://pyinstaller.47505.n6.nabble.com/">Nabble</a></li>
-<li>To subscribe to the mailing list, send an empty e-mail to
-<a class="reference external" href="mailto:pyinstaller+subscribe&#64;googlegroups.com">pyinstaller+subscribe&#64;googlegroups.com</a> (you don't need a
-Google Account nor GMail! It's just a regular mailing list, use any
-e-mail address you wish).</li>
-</ul>
-</div>
-<div class="section" id="irc-channel">
-<h1>IRC Channel</h1>
-<ul class="simple">
-<li>IRC channel <strong>#pyinstaller</strong> at <a class="reference external" href="http://freenode.net/">freenode</a>
-also available online at <a class="reference external" href="http://webchat.freenode.net/?channels=pyinstaller&amp;prompt=1">IRC webchat</a></li>
-</ul>
-</div>
-<div class="section" id="git-repository">
-<h1>Git Repository</h1>
-<ul>
-<li><p class="first">You may browse the current repostory at the <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/">Repository Browser</a>.</p>
-</li>
-<li><p class="first">Or you may check out the current version by running:</p>
-<pre class="literal-block">
-git clone git://github.com/pyinstaller/pyinstaller.git
-</pre>
-</li>
-</ul>
-</div>
-<div class="section" id="contributions">
-<h1>Contributions</h1>
-<p>We are happy about contributions. <a class="reference external" href="how-to-contribute.html">How to Contribute</a> should
-provide all information you need.</p>
-</div>
-<div class="section" id="development">
-<h1>Development</h1>
-<p>For information about the &quot;core&quot; development, including tools and
-processes, please refer to the <a class="reference external" href="development.html">Development</a> section.</p>
 </div>
 </div>
 </body>

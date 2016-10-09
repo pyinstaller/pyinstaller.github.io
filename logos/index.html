@@ -356,10 +356,10 @@ tt, span.literal {
 }
 
 div.document {
-	padding-left: 2em;
-	padding-right: 2em;
-	padding: 0 20px 30px;
+	margin-left: 2em;
+	margin-right: 2em;
 }
+
 dl, table {
 	margin-left: 2em;
 	margin-right: 2em;
@@ -367,17 +367,17 @@ dl, table {
 
 h1, h2, h3, h4, h5, h6 {
     background-color: #F2F2F2;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: thin solid #CCCCCC;
     color: #20435C !important;
     font-family: 'Trebuchet MS',sans-serif;
     font-weight: normal;
-    margin: 20px -20px 10px;
-    padding: 3px 0 3px 10px;
+    padding: 3px 0 3px 1em;
 }
 
 h1 {
 	text-align: center;
 	font-variant: small-caps;
+	padding: 0;
 }
 div#contents p.topic-title.first {
 	font-size: large;
@@ -398,7 +398,7 @@ h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visit
 h2 a:hover::after, h3 a:hover::after {
 	color: red;
 	content: " back to contents";
-	text-decoration: unterline;
+	text-decoration: underline;
 	font-size: x-small;
 	margin-left: 1em;
 }
@@ -494,8 +494,6 @@ pre {
   color: #333333;
   line-height: 120%;
   padding: 0.5em;
-  margin-left: 4em;
-  margin-right: 4em;
   font-family: monospace;
   font-size: 0.95em;
 }
@@ -550,27 +548,68 @@ div.container.half,
 div.section#features,
 div.section#downloads,
 div.section#documentation,
-div.section#license {
-    width:45%;
-    float:left;
-    padding-left:2em;
-    align:top;
+div.section#license,
+div.section#support,
+div.section#development {
+    width: 47%;
+    float: left;
+    vertical-align:top;
+}
+
+div.section {
+    border-left:solid thin #CCCCBB;
+    border-right:solid thin #CCCCBB;
+}
+
+div.section > div.section {
+    border-left: none;
+    border-right: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+div.section > div,
+div.section > p {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+div.section > ul {
+    margin-right: 0.5em;
+}
+
+div.section + h1 {
+    padding-left: -0.5em;
+    padding-right: -0.5em;
 }
 
 div.container.half.left,
-div.section#features {
-    border-right:solid thin #CCCCBB
+div.section#features,
+div.section#support {
+    margin-right: 2em;
+}
+
+div.section#features h1,
+div.section#downloads h1,
+div.section#support h1,
+div.section#development h1 {
+    margin-top: 0
+}
+
+div.section#support,
+div.section#development {
+    margin-top: 2em;
 }
 
 div.container.half.right,
 div.section#downloads,
 div.section#documentation,
-div.section#license {
-    border-right:solid thin #CCCCBB
+div.section#license,
+div.section#development {
 }
 
 div.container.clear,
-div.section#bug-reports {
+div.section#support {
     clear:both;
 }
 
@@ -579,10 +618,6 @@ body {
     background-image: url("/logos/pyinstaller-draft1c-header-trans.png");
     background-repeat: no-repeat;
     background-position: left top;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin-right: 10px;
 }
 
 .bolditalic {
@@ -602,6 +637,11 @@ div.sidenote {
     padding: 0.5em 1em;
     position: relative;
     width: 20%;
+}
+
+pre.literal-block {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 </style>
