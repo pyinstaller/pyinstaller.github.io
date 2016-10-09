@@ -193,9 +193,7 @@ commercial ones). In other words, you have no restrictions in
 will have to comply with the GPL license. See also our FAQ_.
 
 
-
-
-Bug reports
+Support
 ================
 
 .. container:: bold
@@ -204,33 +202,8 @@ Bug reports
   look at `If Things Go Wrong`_ and `How to Report Bugs`_, which will
   help us a lot on solving the bug.
 
-Look at the `list of open bugs
-<https://github.com/pyinstaller/pyinstaller/issues>`_. You can report
-bugs either anonymously or after registering to this website. If you
-register, you will be able to followup on the tickets and receive
-notifications.
-
-
-Maintainers
-================
-
-
-* PyInstaller is currently maintained by Martin Zibricky, `Hartmut
-  Goebel <http://www.crazy-compilers.com>`_, David Cortesi and David
-  Vierra.
-
-  The project was founded by `Giovanni Bajo
-  <http://giovanni.bajo.it>`_ (rasky@develer.com, `@giovannibajo
-  <http://twitter.com/giovannibajo>`_).
-  Installer.
-
-We would like to thank Gordon McMillan who wrote the original Python
-Installer, and William Caban for his initial development and
-maintenance effort without which PyInstaller would not exist today.
-
 Mailing List
-================
-
+~~~~~~~~~~~~~~~~
 
 * `PyInstaller Mailing List
   <http://groups-beta.google.com/group/PyInstaller>`_,
@@ -246,17 +219,32 @@ Mailing List
   Google Account nor GMail! It's just a regular mailing list, use any
   e-mail address you wish).
 
-
 IRC Channel
-================
+~~~~~~~~~~~~~~~~
 
 * IRC channel **#pyinstaller** at `freenode <http://freenode.net/>`_
   also available online at `IRC webchat
   <http://webchat.freenode.net/?channels=pyinstaller&prompt=1>`_
 
 
-Git Repository
+Bug reports
+~~~~~~~~~~~~~~~~
+
+Look at the `list of open bugs
+<https://github.com/pyinstaller/pyinstaller/issues>`_. You can report
+bugs either anonymously or after registering to this website. If you
+register, you will be able to followup on the tickets and receive
+notifications.
+
+
+Development
 ================
+
+We are happy about contributions. `How to Contribute <how-to-contribute.html>`__ should
+provide all information you need.
+
+Source Code Repository
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * You may browse the current repostory at the `Repository Browser
   <https://github.com/pyinstaller/pyinstaller/>`_.
@@ -266,19 +254,25 @@ Git Repository
     git clone git://github.com/pyinstaller/pyinstaller.git
 
 
-Contributions
-================
-
-We are happy about contributions. `How to Contribute <how-to-contribute.html>`__ should
-provide all information you need.
-
-
-Development
-=================
-
-For information about the "core" development, including tools and
+If you are interested in the "core" development, including tools and
 processes, please refer to the Development_ section.
 
+
+Maintainers
+~~~~~~~~~~~~~~~~
+
+* PyInstaller is currently maintained by Martin Zibricky, `Hartmut
+  Goebel <http://www.crazy-compilers.com>`_, David Cortesi and David
+  Vierra.
+
+  The project was founded by `Giovanni Bajo
+  <http://giovanni.bajo.it>`_ (rasky@develer.com, `@giovannibajo
+  <http://twitter.com/giovannibajo>`_).
+  Installer.
+
+We would like to thank Gordon McMillan who wrote the original Python
+Installer, and William Caban for his initial development and
+maintenance effort without which PyInstaller would not exist today.
 
 .. _Development: development.html
 .. _FAQ: faq.html

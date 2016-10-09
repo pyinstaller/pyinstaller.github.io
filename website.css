@@ -3,28 +3,37 @@ div.container.half,
 div.section#features,
 div.section#downloads,
 div.section#documentation,
-div.section#license {
+div.section#license,
+div.section#support,
+div.section#development {
     width:45%;
     float:left;
     padding-left:2em;
-    align:top;
+    vertical-align:top;
 }
 
 div.container.half.left,
-div.section#features {
+div.section#features,
+div.section#support {
     border-right:solid thin #CCCCBB
 }
 
 div.container.half.right,
 div.section#downloads,
 div.section#documentation,
-div.section#license {
+div.section#license,
+div.section#development {
     border-right:solid thin #CCCCBB
 }
 
 div.container.clear,
-div.section#bug-reports {
+div.section#support {
     clear:both;
+}
+
+div.section#support,
+div.section#development {
+    margin-top: 1em;
 }
 
 body {
