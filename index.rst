@@ -206,7 +206,7 @@ Mailing List
 ~~~~~~~~~~~~~~~~
 
 * `PyInstaller Mailing List
-  <https://groupsgoogle.com/group/PyInstaller>`_,
+  <https://groups.google.com/group/PyInstaller>`_,
   also available at
   `Gmane <https://dir.gmane.org/gmane.comp.python.pyinstaller>`_,
   `The Mail Archive
