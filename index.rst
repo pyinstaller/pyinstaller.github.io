@@ -106,19 +106,19 @@ Mac-specific features
 Downloads
 ================
 
-The latest stable release of PyInstaller is 3.2.
+The latest stable release of PyInstaller is 3.2.1.
 (`Change Log <https://pyinstaller.readthedocs.io/en/latest/CHANGES.html>`_).
 
 
-* **Release 3.2**:
+* **Release 3.2.1**:
 
   Stable, supports Python 2.7, 3.3–3.5
 
-  - `PyInstaller 3.2 (tar.gz)`__ (sha-256: 7598d4c9f5712ba78beb46a857a493b1b93a584ca59944b8e7b6be00bb89cabc)
-  - `PyInstaller 3.2 (zip)`__ (sha-256: e27ad7e840d49924f375d3ffa4e0d67b9340f4d78c8279378dd5f4a89dbf6318)
+  - `PyInstaller 3.2.1 (tar.bz2)`__ (sha-256: f08ca806bc26e62034bca181a4b85de22568a3d39bdb062f05927c6e86c2a48c)
+  - `PyInstaller 3.2.1 (zip)`__ (sha-256: d758dccb0532a4e69994d7e101359dc879dce2ddc4d78aab44711d3b9138d5ed)
 
-  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.2/PyInstaller-3.2.tar.gz
-  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.2/PyInstaller-3.2.zip
+  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.2.1/PyInstaller-3.2.1.tar.bz2
+  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.2.1/PyInstaller-3.2.1.zip
 
 
 * **Development**: supports Python 2.7, 3.3–3.5
@@ -162,7 +162,7 @@ See `PyInstaller Logos <logos>`__ for marketing materials.
 Documentation
 ================
 
-* Documentation for version 3.2:
+* Documentation for version 3.2.1:
   `html <https://pyinstaller.readthedocs.io/>`__,
   `pdf <https://rtfd.io/projects/pyinstaller/downloads/pdf/stable/>`__
 
@@ -261,8 +261,8 @@ processes, please refer to the Development_ section.
 Maintainers
 ~~~~~~~~~~~~~~~~
 
-* PyInstaller is currently maintained by Martin Zibricky, `Hartmut
-  Goebel <http://www.crazy-compilers.com>`_, David Cortesi and David
+* PyInstaller is currently maintained by `Hartmut Goebel
+  <http://www.crazy-compilers.com>`_, Martin Zibricky, David Cortesi and David
   Vierra.
 
   The project was founded by `Giovanni Bajo
