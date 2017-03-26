@@ -10,7 +10,7 @@ REPOSITORY    = origin
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help Makefile clean upload
+.PHONY: help Makefile clean upload venv
 
 clean:
 	rm -rf _build/html
@@ -26,6 +26,13 @@ upload:
 	git commit -m 'Website update.' && \
 	git push $(REPOSITORY)
 
+venv:
+	@if test -z "$(VENVDIR)" ; then \
+       echo ; echo "Run make venv VENVDIR=/tmp/v34 " ; echo ; false ; fi
+	pyvenv "$(VENVDIR)"
+	"$(VENVDIR)"/bin/pip install -r requirements.txt
+	@echo
+	@echo "Now run 'source "$(VENVDIR)"/bin/activate'"
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
