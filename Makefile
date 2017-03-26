@@ -20,7 +20,9 @@ upload:
 	git worktree prune
 	git worktree add _build/html master
 	find _build/html -mindepth 1 -not -name .git\* -delete
+	git update-index -q --refresh
 	make html
+	git describe --dirty=.mod --always > _build/html/_static/build-tag
 	cd _build/html && \
 	git add --all && \
 	git commit -m 'Website update.' && \
