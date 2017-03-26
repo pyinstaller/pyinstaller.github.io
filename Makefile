@@ -1,9 +1,21 @@
+# You can set these variables from the command line.
+SPHINXOPTS    =
+SPHINXBUILD   = sphinx-build
+SPHINXPROJ    = PyInstaller
+SOURCEDIR     = .
+BUILDDIR      = _build
 
-all: index.html logos/index.html
+# Put it first so that "make" without argument is like "make help".
+help:
+	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-
-%.html: %.rst default.css website.css
-	rst2html --embed-stylesheet --stylesheet-path=html4css1.css,./default.css,./website.css  $< > $@
+.PHONY: help Makefile clean
 
 clean:
-	rm -f index.html
+	rm -rf _build/html
+
+
+# Catch-all target: route all unknown targets to Sphinx using the new
+# "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
+%: Makefile
+	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)

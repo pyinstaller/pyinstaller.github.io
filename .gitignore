@@ -15,3 +15,5 @@ Icon?
 Thumbs.db
 *.pid
 ._.**~
+
+_build

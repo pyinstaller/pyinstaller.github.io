@@ -1,0 +1,9 @@
+
+.. _Development: development.html
+.. _FAQ: faq.html
+.. _`How to Report Bugs`: how-to-report-bugs.html
+.. _`If Things Go Wrong`: if-things-go-wrong.html
+.. _Recipes: https://github.com/pyinstaller/pyinstaller/wiki/Recipes
+.. _`Projects using PyInstaller`: https://github.com/pyinstaller/pyinstaller/wiki/Projects-Using-PyInstaller
+.. _`Supported Packages`: https://github.com/pyinstaller/pyinstaller/wiki/Supported-Packages
+
