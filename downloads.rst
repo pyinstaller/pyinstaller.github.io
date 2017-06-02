@@ -1,7 +1,28 @@
 
-
 Downloads
 ================
+
+Installation
+~~~~~~~~~~~~~~~~~~
+
+The easies way to install PyInstaller is using ``pip``::
+
+    pip install pyinstaller
+
+or upgrade to a newer version::
+
+    pip install --upgrade pyinstaller
+
+To install the current development version use::
+
+    pip install https://github.com/pyinstaller/pyinstaller/tarball/develop
+
+For other installation options `please refer to the manual
+<https://pyinstaller.readthedocs.io/en/latest/installation.html>`.
+
+
+Downloads
+~~~~~~~~~~~~~~~~
 
 .. |Release-Tar-sha256| replace:: f08ca806bc26e62034bca181a4b85de22568a3d39bdb062f05927c6e86c2a48c
 .. |Release-Zip-sha256| replace:: d758dccb0532a4e69994d7e101359dc879dce2ddc4d78aab44711d3b9138d5ed
@@ -34,6 +55,9 @@ The latest stable release of PyInstaller is 3.2.1.
 See the `full list of releases
 <https://github.com/pyinstaller/pyinstaller/releases>`__ for older
 (obsolete) releases.
+
+Logos
+===============
 
 See `PyInstaller Logos <logos>`__ for marketing materials.
 
