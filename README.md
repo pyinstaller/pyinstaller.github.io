@@ -5,7 +5,7 @@ Basic Workflow
 ---------------------
 
 ```
-make venv VENVDIR=/tmp/py-web
+make venv VENVDIR=/tmp/py-web   # prepares the venv
 source /tmp/py-web/bin/activate
 … hack, hack, hack
 make html
