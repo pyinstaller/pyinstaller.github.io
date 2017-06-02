@@ -22,6 +22,9 @@
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_bootstrap_theme
 
+def setup(app):
+    app.add_stylesheet("website.css") # also can be a full URL
+
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
