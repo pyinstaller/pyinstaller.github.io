@@ -21,3 +21,7 @@ div.sidenote {
     position: relative;
     width: 20%;
 }
+
+a.download code.download {
+	color: inherit;
+}
