@@ -6,11 +6,11 @@ Documentation
 
 * Documentation for version 3.2.1:
   `html <https://pyinstaller.readthedocs.io/>`__,
-  `pdf <https://rtfd.io/projects/pyinstaller/downloads/pdf/stable/>`__
+  `pdf <https://readthedocs.org/projects/pyinstaller/downloads/pdf/stable/>`__
 
 * Manual for development version:
-  `html <https://pyinstaller.readthedocs.io/latest/>`__,
-  `pdf <https://rtfd.io/projects/pyinstaller/downloads/pdf/latest/>`__.
+  `html <https://pyinstaller.readthedocs.io/en/latest/>`__,
+  `pdf <https://readthedocs.org/projects/pyinstaller/downloads/pdf/latest/>`__.
 
 * See the list of `Supported Packages`_
 
