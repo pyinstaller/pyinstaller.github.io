@@ -15,7 +15,7 @@ or upgrade to a newer version::
 
 To install the current development version use::
 
-    pip install https://github.com/pyinstaller/pyinstaller/tarball/develop
+    pip install https://github.com/pyinstaller/pyinstaller/archive/develop.tar.gz
 
 For other installation options `please refer to the manual
 <https://pyinstaller.readthedocs.io/en/latest/installation.html>`.
