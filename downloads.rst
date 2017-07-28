@@ -13,12 +13,13 @@ or upgrade to a newer version::
 
     pip install --upgrade pyinstaller
 
+For other installation options `please refer to the manual
+<https://pyinstaller.readthedocs.io/en/latest/installation.html>`_ and `the
+pip user guide <https://pip.pypa.io/en/stable/user_guide/>`_.
+
 To install the current development version use::
 
     pip install https://github.com/pyinstaller/pyinstaller/archive/develop.tar.gz
-
-For other installation options `please refer to the manual
-<https://pyinstaller.readthedocs.io/en/latest/installation.html>`.
 
 .. |pip| replace:: :command:`pip`
 .. _pip: https://pip.pypa.io/
