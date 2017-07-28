@@ -25,6 +25,8 @@ To install the current development version use::
 .. _pip: https://pip.pypa.io/
 
 
+.. _downloads:
+
 Downloads
 ~~~~~~~~~~~~~~~~
 
