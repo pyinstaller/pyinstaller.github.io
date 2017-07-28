@@ -31,7 +31,6 @@ Maintainers
   The project was founded by `Giovanni Bajo
   <http://giovanni.bajo.it>`_ (rasky@develer.com, `@giovannibajo
   <http://twitter.com/giovannibajo>`_).
-  Installer.
 
 We would like to thank Gordon McMillan who wrote the original Python
 Installer, and William Caban for his initial development and
