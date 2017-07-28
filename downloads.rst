@@ -5,7 +5,7 @@ Downloads
 Installation
 ~~~~~~~~~~~~~~~~~~
 
-The easies way to install PyInstaller is using ``pip``::
+The easies way to install PyInstaller is using |pip|_::
 
     pip install pyinstaller
 
@@ -19,6 +19,9 @@ To install the current development version use::
 
 For other installation options `please refer to the manual
 <https://pyinstaller.readthedocs.io/en/latest/installation.html>`.
+
+.. |pip| replace:: :command:`pip`
+.. _pip: https://pip.pypa.io/
 
 
 Downloads
