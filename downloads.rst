@@ -58,10 +58,9 @@ The latest stable release of PyInstaller is 3.2.1
   https://github.com/pyinstaller/pyinstaller`` and may want to refer to the
   Development_ section.
 
+* **Older (obsolete) releases** can be found at the `full list of releases
+  <https://github.com/pyinstaller/pyinstaller/releases>`__.
 
-See the `full list of releases
-<https://github.com/pyinstaller/pyinstaller/releases>`__ for older
-(obsolete) releases.
 
 Logos
 ===============
