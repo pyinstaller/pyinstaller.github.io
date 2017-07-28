@@ -18,7 +18,8 @@ Source Code Repository
 
 
 If you are interested in the "core" development, including tools and
-processes, please refer to the Development_ section.
+processes, please refer to the `wiki page on Development
+<https://github.com/pyinstaller/pyinstaller/wiki/Development>`__.
 
 
 Maintainers
