@@ -43,4 +43,13 @@ register, you will be able to followup on the tickets and receive
 notifications.
 
 
+Consulting
+~~~~~~~~~~~~~~~
+
+One of the maintainers, `Hartmut Goebel
+<mailto:htgoebel@crazy-compilers.com>`_, offers consulting services for
+PyInstaller. If you want to be consulted or need some issue to be solved quick
+please get in touch with him.
+
+
 .. include:: _common_definitions.txt
