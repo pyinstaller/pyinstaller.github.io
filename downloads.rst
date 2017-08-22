@@ -40,11 +40,13 @@ The latest stable release of PyInstaller is 3.2.1
 
 * **Release 3.2.1**: stable, supports Python 2.7, 3.3–3.5
 
-  - `PyInstaller 3.2.1 (tar.bz2)`__ (sha-256: |Release-Tar-sha256|)
-  - `PyInstaller 3.2.1 (zip)`__ (sha-256: |Release-Zip-sha256|)
+  - `PyInstaller 3.2.1 (tar.bz2)`__ (`pgp`__, sha-256: |Release-Tar-sha256|)
+  - `PyInstaller 3.2.1 (zip)`__ (`pgp`__, sha-256: |Release-Zip-sha256|)
 
   __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.2.1/PyInstaller-3.2.1.tar.bz2
+  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.2.1/PyInstaller-3.2.1.tar.bz2.asc
   __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.2.1/PyInstaller-3.2.1.zip
+  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.2.1/PyInstaller-3.2.1.zip.asc
 
 
 * **Development**: unstable, supports Python 2.7, 3.3–3.6
