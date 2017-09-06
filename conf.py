@@ -113,6 +113,7 @@ html_theme_options = {
       ("License", "license"),
       ("Documentation", "documentation"),
       ("Support", "support"),
+      ("Donate", "donate"),
       ("Development", "development"),
     ],
 
