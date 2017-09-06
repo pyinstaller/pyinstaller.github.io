@@ -49,7 +49,7 @@ Consulting
 One of the maintainers, `Hartmut Goebel
 <mailto:htgoebel@crazy-compilers.com>`_, offers consulting services for
 PyInstaller. If you want to be consulted or need some issue to be solved quick
-please get in touch with him.
+please get in touch with him and he will send you a quote.
 
 
 .. include:: _common_definitions.txt
