@@ -43,12 +43,13 @@ register, you will be able to followup on the tickets and receive
 notifications.
 
 
-Consulting
-~~~~~~~~~~~~~~~
+Consulting and Commercial Support
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 One of the maintainers, `Hartmut Goebel
-<mailto:htgoebel@crazy-compilers.com>`_, offers consulting services for
-PyInstaller. If you want to be consulted or need some issue to be solved quick
+<mailto:htgoebel@crazy-compilers.com>`_, offers consulting services and
+commercial support for
+PyInstaller. If you are interested,
 please get in touch with him and he will send you a quote.
 
 
