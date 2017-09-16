@@ -96,14 +96,14 @@
 <ul class="simple">
 <li>Packaging of Python programs into standard executables, that work
 on computers without Python installed.</li>
-<li>Multiplatform: works under<ul>
+<li>Multi-platform: works under<ul>
 <li>Windows (32-bit and 64-bit),</li>
 <li>Linux (32-bit and 64-bit),</li>
 <li>Mac OS X (32-bit and 64-bit),</li>
-<li>contributed suppport for FreeBSD, Solaris and AIX.</li>
+<li>contributed suppport for FreeBSD, Solaris, HPUX, and AIX.</li>
 </ul>
 </li>
-<li>Multiversion: supports Python 2.7 and Python 3.3, 3.4 and 3.5.</li>
+<li>Multi-version: supports Python 2.7 and Python 3.3, 3.4 and 3.5.</li>
 <li>Flexible packaging mode:<ul>
 <li>Single directory: build a directory containing an executable plus
 all the external binary modules (.dll, .pyd, .so) used by the
@@ -117,11 +117,14 @@ mode you want through a simple script file in Python.</li>
 <li>Explicit intelligent support for many 3rd-packages (for hidden
 imports, external data files, etc.), to make them work with
 PyInstaller out-of-the-box (see <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/wiki/Supported-Packages">Supported Packages</a>).</li>
-<li>Full egg support: required .egg files are automatically
-inspected for dependencies and bundled, and all the egg-specific
-features are supported at runtime as well (entry points, etc.).</li>
-<li>Automatic support for binary libraries used through ctypes
-(see the <a class="reference external" href="features.html#ctypes-dependency-support">feature page</a> for details).</li>
+<li>Full single-file Egg-support: required .egg files are automatically
+inspected for dependencies and bundled, and all the egg-specific features
+are supported at runtime as well (entry points, etc.).</li>
+<li>Partial directory Egg-support: required .egg directories are automatically
+inspected for dependencies and bundled, but egg-specific features will not
+work at runtime.</li>
+<li>Automatic support for binary libraries used through <cite>ctypes</cite>
+(see the <a class="reference internal" href="#ctypes-dependency-support"><span class="std std-ref">ctypes Dependencies Support</span></a> for details).</li>
 <li>Support for automatic binary packing through the well-known
 <a class="reference external" href="https://upx.github.io/">UPX compressor</a>.</li>
 <li>Optional console mode (see standard output and standard error at
@@ -130,21 +133,89 @@ runtime).</li>
 <div class="section" id="windows-specific-features">
 <h2>Windows-specific features<a class="headerlink" href="#windows-specific-features" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Support for <a class="reference external" href="features.html#Windows-code-signing">code-signing executables</a>.</li>
-<li><a class="reference external" href="features.html#python26-win">Full automatic support for CRTs</a>: no
-need to manually distribute MSVCR*.DLL, redist installers,
-manifests, or anything else; <em>true</em> one-file applications that work
-everywhere!</li>
+<li>Support for code-signing executables (see <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/wiki/Recipe-Win-Code-Signing">Recipe Win Code Signing</a> for
+details).</li>
+<li>Full automatic support for CRTs: no need to manually distribute
+MSVCR*.DLL, redist installers, manifests, or anything else; <em>true</em>
+one-file applications that work everywhere! (But see the <a class="reference external" href="https://pyinstaller.readthedocs.io/en/latest/usage.html#platform-specific-notes-windows" title="(in PyInstaller v3.3.dev0+g007f78f)"><span class="xref std std-ref">restriction
+when building on Windows 10</span></a>.)</li>
 <li>Selectable executable icon.</li>
 <li>Fully configurable version resource section and manifests in
 executable.</li>
+<li>Configurable .exe requirement running as administrator - UAC admin.</li>
 </ul>
 </div>
 <div class="section" id="mac-specific-features">
 <h2>Mac-specific features<a class="headerlink" href="#mac-specific-features" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="features.html#mac-os-compatibility">Support for bundles</a></li>
+<li>Support for .app bundles.</li>
+<li>Support for code-signing: created .app bundles can be signed by
+<strong class="program">codesign</strong> (see <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/wiki/Recipe-OSX-Code-Signing">Recipe OSX Code Signing</a> for details.</li>
 </ul>
+</div>
+<div class="section" id="ctypes-dependencies-support">
+<span id="ctypes-dependency-support"></span><h2><cite>ctypes</cite> Dependencies Support<a class="headerlink" href="#ctypes-dependencies-support" title="Permalink to this headline">¶</a></h2>
+<p><cite>ctypes</cite> is a foreign function library for Python, that allows calling
+functions present in shared libraries. Those libraries are not imported as
+Python packages, because they are not picked up via Python imports: their path
+is passed to <cite>ctypes</cite> instead, which deals with the shared library directly;
+this caused &lt;1.4 PyInstaller import detect machinery to miss those libraries,
+failing the goal to build self-contained PyInstaller executables:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ctypes</span> <span class="k">import</span> <span class="o">*</span>
+<span class="c1"># This will pass undetected under PyInstaller detect machinery,</span>
+<span class="c1"># because it&#39;s not a direct import.</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">CDLL</span><span class="p">(</span><span class="s2">&quot;/usr/lib/library.so&quot;</span><span class="p">)</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">function_call</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="section" id="solution-in-pyinstaller">
+<h3>Solution in PyInstaller<a class="headerlink" href="#solution-in-pyinstaller" title="Permalink to this headline">¶</a></h3>
+<p>PyInstaller contains a pragmatic implementation of <cite>ctypes</cite> dependencies: it
+will search for simple standard usages of <cite>ctypes</cite> and <em>automatically</em> track and
+bundle the referenced libraries. The following usages will be correctly
+detected:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CDLL</span><span class="p">(</span><span class="s2">&quot;library.so&quot;</span><span class="p">)</span>
+<span class="n">WinDLL</span><span class="p">(</span><span class="s2">&quot;library.so&quot;</span><span class="p">)</span>
+<span class="n">ctypes</span><span class="o">.</span><span class="n">DLL</span><span class="p">(</span><span class="s2">&quot;library.so&quot;</span><span class="p">)</span>
+<span class="n">cdll</span><span class="o">.</span><span class="n">library</span> <span class="c1"># Only valid under Windows - a limitation of ctypes, not PyInstaller&#39;s</span>
+<span class="n">windll</span><span class="o">.</span><span class="n">library</span> <span class="c1"># Only valid under Windows - a limitation of ctypes, not PyInstaller&#39;s</span>
+<span class="n">cdll</span><span class="o">.</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;library.so&quot;</span><span class="p">)</span>
+<span class="n">windll</span><span class="o">.</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;library.so&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>More in detail, the following restrictions apply:</p>
+<ul class="simple">
+<li><strong>Only libraries referenced by bare filenames (e.g. no leading paths) will
+be handled</strong>. Handling absolute paths would be impossible without modifying
+the bytecode as well (remember that while running frozen, <cite>ctypes</cite> would keep
+searching the library at that very absolute location, whose presence on the
+host system nobody can guarantee), and relative paths handling would require
+recreating in the frozen executable the same hierarchy of directories
+leading to the library, in addition of keeping track of which the current
+working directory is;</li>
+<li><strong>Only library paths represented by a literal string will be detected and
+included in the final executable</strong> PyInstaller import detection works by
+inspecting raw Python bytecode, and since you can pass the library path to
+<cite>ctypes</cite> using a string (that can be represented by a literal in the code, but
+also by a variable, by the return value of an arbitrarily complex function,
+etc…), it’s not reasonably possible to detect <em>all</em> <cite>ctypes</cite> dependencies;</li>
+<li><strong>Only libraries referenced in the same context of `ctypes’` invocation will
+be handled</strong>.</li>
+</ul>
+<p>We feel that it should be enough to cover most <cite>ctypes’</cite> usages, with little
+or no modification required in your code. If you think, <cite>PyInstaller</cite> should
+do more by itself, please <a class="reference external" href="https://pyinstaller.readthedocs.io/en/latest/contributing.html#how-to-contribute" title="(in PyInstaller v3.3.dev0+g007f78f)"><span class="xref std std-ref">help improving</span></a>
+<cite>PyInstaller</cite>.</p>
+</div>
+<div class="section" id="restrictions">
+<h3>Restrictions<a class="headerlink" href="#restrictions" title="Permalink to this headline">¶</a></h3>
+<p>The <cite>ctypes</cite> detect system at <code class="docutils literal"><span class="pre">Analysis()</span></code> time is based on
+<code class="docutils literal"><span class="pre">ctypes.util.find_library()</span></code>. This means that you have to make sure that
+while performing <code class="docutils literal"><span class="pre">Analysis()</span></code> and running frozen, all the environment values
+<code class="docutils literal"><span class="pre">find_library()</span></code> uses to search libraries are aligned to those when running
+un-frozen. Examples include using <span class="target" id="index-0"></span><code class="xref std std-envvar docutils literal"><span class="pre">LD_LIBRARY_PATH</span></code> or
+<span class="target" id="index-1"></span><code class="xref std std-envvar docutils literal"><span class="pre">DYLD_LIBRARY_PATH</span></code> to widen find_library scope.</p>
+</div>
 </div>
 </div>
 
@@ -161,7 +232,7 @@ executable.</li>
     </p>
     <p>
         &copy; Copyright 2005–2017, PyInstaller Development Team.<br/>
-      Last updated on Sep 06, 2017.<br/>
+      Last updated on Sep 17, 2017.<br/>
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.<br/>
     </p>
   </div>
