@@ -13,7 +13,7 @@ help:
 .PHONY: help Makefile clean upload venv
 
 clean:
-	rm -rf _build/html
+	rm -rf _build
 
 upload:
 	rm -rf _build/html
