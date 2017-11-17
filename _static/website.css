@@ -25,3 +25,8 @@ div.sidenote {
 a.download code.download {
 	color: inherit;
 }
+
+#donations .figure.align-center {
+	float: left;
+	padding: 0 3em;
+}
