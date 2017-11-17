@@ -24,6 +24,33 @@ projects. **So please help keeping PyInstaller alive.** Thanks!
   bill, please leave your name, address and email-address.
 
 
+Sponsorship and  Project Grant
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please consider sponsoring |PyInstaller| development, especially if your
+company benefits from this project.
+
+We welcome your patronage on Bountysource:
+
+* Contribute a recurring amount to the team
+* Place a bounty on a specific feature
+
+Your contribution will go towards adding new features to |PyInstaller| and
+making sure all functionality continues to meet our high quality standards.
+
+A grant for contiguous full-time development has the biggest impact for
+progress. Periods of 3 to 10 days allow a contributor to tackle substantial
+complex issues which are otherwise left to linger until somebody can’t afford
+to not fix them.
+
+Contact `Hartmut Goebel <mailto:htgoebel@crazy-compilers.com>`_ to arrange a
+grant for a core contributor.
+
+Huge thanks to all the companies and individuals who financially contributed
+to the development of |PyInstaller|. Please send a PR if you’ve donated and
+would like to be listed on the web-site.
+
+
 .. figure:: _static/qr-bitcon-recieve.png
    :align: center
    :alt: QR-Code for Bitcoin address
@@ -34,3 +61,6 @@ projects. **So please help keeping PyInstaller alive.** Thanks!
    :alt: QR-Code for Ethereum address
 
    Ethereum address
+
+
+.. include:: _common_definitions.txt
