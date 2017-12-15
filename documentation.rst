@@ -4,7 +4,7 @@
 Documentation
 ================
 
-* Documentation for version 3.3:
+* Documentation for the current stable release:
   `html <https://pyinstaller.readthedocs.io/>`__,
   `pdf  <https://readthedocs.org/projects/pyinstaller/downloads/pdf/stable/>`__,
   `epub <https://readthedocs.org/projects/pyinstaller/downloads/epub/stable/>`__
