@@ -44,7 +44,7 @@ The latest stable release of PyInstaller is 3.3.1
   __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.3.1/PyInstaller-3.3.1.tar.gz.asc
 
 
-* **Development**: unstable, supports Python 2.7, 3.3–3.6
+* **Development**: unstable, supports Python 2.7, 3.4–3.6
 
   - `Current development code (tar.gz)`__
   - `Current development code (zip)`__
