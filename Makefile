@@ -32,6 +32,7 @@ venv:
 	@if test -z "$(VENVDIR)" ; then \
        echo ; echo "Run make venv VENVDIR=/tmp/v34 " ; echo ; false ; fi
 	pyvenv "$(VENVDIR)"
+	"$(VENVDIR)"/bin/pip install --upgrade pip
 	"$(VENVDIR)"/bin/pip install -r requirements.txt
 	@echo
 	@echo "Now run 'source "$(VENVDIR)"/bin/activate'"
