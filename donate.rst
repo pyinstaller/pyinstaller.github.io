@@ -43,7 +43,7 @@ progress. Periods of 3 to 10 days allow a contributor to tackle substantial
 complex issues which are otherwise left to linger until somebody can’t afford
 to not fix them.
 
-Contact `Hartmut Goebel <mailto:htgoebel@crazy-compilers.com>`_ to arrange a
+Contact `Hartmut Goebel <mailto:h.goebel@crazy-compilers.com>`_ to arrange a
 grant for a core contributor.
 
 Huge thanks to all the companies and individuals who financially contributed

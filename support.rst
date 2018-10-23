@@ -47,7 +47,7 @@ Consulting and Commercial Support
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 One of the maintainers, `Hartmut Goebel
-<mailto:htgoebel@crazy-compilers.com>`_, offers consulting services and
+<mailto:h.goebel@crazy-compilers.com>`_, offers consulting services and
 commercial support for
 PyInstaller. If you are interested,
 please get in touch with him and he will send you a quote.
