@@ -10,7 +10,7 @@ Features
 * Multi-platform: works under
 
   - Windows (32-bit and 64-bit),
-  - Linux (32-bit and 64-bit),
+  - GNU/Linux (32-bit and 64-bit),
   - Mac OS X (32-bit and 64-bit),
   - contributed suppport for FreeBSD, Solaris, HPUX, and AIX.
 
