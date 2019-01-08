@@ -55,7 +55,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'PyInstaller'
-copyright = '2005–2017, PyInstaller Development Team'
+copyright = '2005–2019, PyInstaller Development Team'
 author = ''
 
 # The version info for the project you're documenting, acts as replacement for
