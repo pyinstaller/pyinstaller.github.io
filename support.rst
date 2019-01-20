@@ -2,7 +2,7 @@
 Support
 ================
 
-.. container:: bold
+.. container:: bold admonition
 
   If you have problems to get your application running, please have a
   look at `If Things Go Wrong`_ and `How to Report Bugs`_, which will
