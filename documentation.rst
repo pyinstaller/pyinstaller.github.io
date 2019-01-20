@@ -19,7 +19,8 @@ Documentation
 
 * See the list of `Supported Packages`_
 
-* Read our FAQ_ and have a look at the Recipes_.
+* Read our `Frequently Asked Quesitons (FAQ)`_
+  and have a look at the Recipes_.
 
 * If your packed application does not run as expected, please read
   `If Things Go Wrong`_.

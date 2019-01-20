@@ -3,7 +3,8 @@
 Development
 ================
 
-We are happy about contributions. `How to Contribute <how-to-contribute.html>`__ should
+We are happy about contributions.
+:ref:`manual:how-to-contribute` should
 provide all information you need.
 
 .. include:: _fundraisingbox.txt
@@ -20,8 +21,8 @@ Source Code Repository
 
 
 If you are interested in the "core" development, including tools and
-processes, please refer to the `wiki page on Development
-<https://github.com/pyinstaller/pyinstaller/wiki/Development>`__.
+processes, please refer to the
+:ref:`manual:Development Guide` in the manual.
 
 
 Maintainers

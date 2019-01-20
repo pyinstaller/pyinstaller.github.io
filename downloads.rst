@@ -56,7 +56,7 @@ The latest stable release of PyInstaller is 3.4
   If you want to motify the source, you may better clone the `git
   <https://git-scm.com/>`_ repository using ``git clone
   https://github.com/pyinstaller/pyinstaller`` and may want to refer to the
-  Development_ section.
+  :ref:`manual:Development Guide` in the manual.
 
 * **Older (obsolete) releases** can be found at the `full list of releases
   <https://github.com/pyinstaller/pyinstaller/releases>`__.
