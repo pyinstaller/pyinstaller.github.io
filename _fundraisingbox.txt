@@ -1,0 +1,12 @@
+
+.. container:: fundraisingbox
+
+   |PyInstaller| development can only continue
+   if users provide reasonable concrete funding.
+   See :doc:`donate` for how to support |PyInstaller|.            
+
+.. Emacs config:
+ Local Variables:
+ mode: rst
+ ispell-local-dictionary: "american"
+ End:

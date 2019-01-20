@@ -16,5 +16,6 @@ commercial ones). In other words, you have no restrictions in
 will have to comply with the GPL license. See also our FAQ_.
 
 
+.. include:: _fundraisingbox.txt
 
 .. include:: _common_definitions.txt

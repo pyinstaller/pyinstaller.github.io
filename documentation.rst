@@ -1,6 +1,4 @@
 
-
-
 Documentation
 ================
 
@@ -27,5 +25,6 @@ Documentation
   `If Things Go Wrong`_.
 
 
+.. include:: _fundraisingbox.txt
 
 .. include:: _common_definitions.txt

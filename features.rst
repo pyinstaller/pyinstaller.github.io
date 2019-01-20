@@ -1,3 +1,4 @@
+.. include:: _fundraisingbox.txt
 
 .. _features:
 
@@ -80,6 +81,8 @@ Mac-specific features
 
   __ https://github.com/pyinstaller/pyinstaller/wiki/Recipe-OSX-Code-Signing
 
+
+.. include:: _fundraisingbox.txt
 
 .. _ctypes-dependency-support:
 

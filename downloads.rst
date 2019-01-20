@@ -24,6 +24,7 @@ To install the current development version use::
 .. |pip| replace:: :command:`pip`
 .. _pip: https://pip.pypa.io/
 
+.. include:: _fundraisingbox.txt
 
 .. _downloads:
 

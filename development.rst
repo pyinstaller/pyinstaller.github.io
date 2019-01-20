@@ -6,6 +6,8 @@ Development
 We are happy about contributions. `How to Contribute <how-to-contribute.html>`__ should
 provide all information you need.
 
+.. include:: _fundraisingbox.txt
+
 Source Code Repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -27,6 +29,8 @@ Maintainers
 
 PyInstaller is currently maintained by `Hartmut Goebel
 <http://www.crazy-compilers.com>`_.
+
+.. include:: _fundraisingbox.txt
 
 The project was founded by `Giovanni Bajo
 <http://giovanni.bajo.it>`_ (rasky@develer.com, `@giovannibajo

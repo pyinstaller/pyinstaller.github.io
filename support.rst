@@ -8,6 +8,9 @@ Support
   look at `If Things Go Wrong`_ and `How to Report Bugs`_, which will
   help us a lot on solving the bug.
 
+.. include:: _fundraisingbox.txt
+
+
 Mailing List
 ~~~~~~~~~~~~~~~~
 
@@ -41,6 +44,13 @@ Look at the `list of open bugs
 bugs either anonymously or after registering to this website. If you
 register, you will be able to followup on the tickets and receive
 notifications.
+
+.. container:: fundraisingbox
+
+   Fixing bugs ans reviewing pull-requeests takes a lot of time.
+   |PyInstaller| development can only continue
+   if users provide reasonable concrete funding.
+   See :doc:`donate` for how to support |PyInstaller|.
 
 
 Consulting and Commercial Support
