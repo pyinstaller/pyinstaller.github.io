@@ -118,7 +118,7 @@ html_theme_options = {
       ("License", "license"),
       ("Documentation", "documentation"),
       ("Support", "support"),
-      ("Donate", "donate"),
+      ("Funding", "funding"),
       ("Development", "development"),
     ],
 
@@ -208,6 +208,7 @@ html_extra_path = [
     #!'development.html',
     'how-to-contribute.html',
     'faq.html',
+    'donate.html',
     'how-to-report-bugs.html',
     #!'license.html',
     #'wiki/FAQ.html',

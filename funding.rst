@@ -29,7 +29,7 @@ Funding by Individuals
    please consider `funding some days of full-time development <#company>`_.
 
 
-* **PayPal:** `Donate
+* **PayPal:** `Fund further development
   <https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VK5QJFDCE8UW6>`_.
   If you want a bill, please leave your name, address and email-address.
 
@@ -41,7 +41,7 @@ Funding by Individuals
 * **Ethereum:** `0xcefaac4c73b22c0343c93bd6fdaeb60240c14235
   <https://etherscan.io/address/0xcefaac4c73b22c0343c93bd6fdaeb60240c14235>`_
 
-* **SEPA/bank-transfer:** If you want to donate via bank-transfer, e.g. SEPA,
+* **SEPA/bank-transfer:** If you want to fund via bank-transfer, e.g. SEPA,
   please drop `Hartmut Goebel <mailto:h.goebel@crazy-compilers.com>`_
   a note and he'll send you the account details. If you want a
   bill, please leave your name, address and email-address.
@@ -78,7 +78,7 @@ Your contribution will go towards adding new features to |PyInstaller| and
 making sure all functionality continues to meet our high quality standards.
 
 Huge thanks to all the companies and individuals who financially contributed
-to the development of |PyInstaller|. Please send a PR if you’ve donated and
+to the development of |PyInstaller|. Please send a PR if you funded and
 would like to be listed on the web-site.
 
 
@@ -95,3 +95,6 @@ would like to be listed on the web-site.
 
 
 .. include:: _common_definitions.txt
+
+.. meta::
+   :keywords: donation,donate,support,spenden,don

@@ -67,7 +67,7 @@ For a more detailed walkthrough, see the `manual
    documentation
    support
    license
-   donate
+   funding
    development
    logos/index
 

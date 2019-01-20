@@ -50,7 +50,7 @@ notifications.
    Fixing bugs ans reviewing pull-requeests takes a lot of time.
    |PyInstaller| development can only continue
    if users provide reasonable concrete funding.
-   See :doc:`donate` for how to support |PyInstaller|.
+   See :doc:`funding` for how to support |PyInstaller|.
 
 
 Consulting and Commercial Support
