@@ -30,7 +30,15 @@ a.download code.download {
 	color: inherit;
 }
 
-#donations .figure.align-center {
+#funding-pyinstaller .figure.align-center {
 	float: left;
 	padding: 0 3em;
+}
+
+.container.fundraisingbox {
+	border: solid thin red;
+	font-size: 120%;
+	max-width: 33.33333em; /* 40em / 120% */
+	padding: 7px 7px 0;
+	margin: 10px auto;
 }
