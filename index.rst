@@ -1,3 +1,4 @@
+.. _main-page:
 .. image:: logos/pyinstaller-draft1c-header-trans.png
 
 =============================================
