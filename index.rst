@@ -3,17 +3,17 @@
 .. image:: logos/pyinstaller-draft1c-header-trans.png
    :alt: PyInstaller official website
 
+.. container:: bold leadtext
+
+   |PyInstaller| freezes (packages) Python applications
+   into stand-alone executables,
+   under Windows, GNU/Linux, Mac OS X, FreeBSD, Solaris and AIX.
+
 .. container:: sidenote bold
 
   If you have problems to get your application running, please have a
   look at `If Things Go Wrong`_ and `How to Report Bugs`_, which will
   help us a lot on solving the bug.
-
-.. container:: bold larger
-
-   |PyInstaller| freezes (packages) Python applications
-   into stand-alone executables,
-   under Windows, GNU/Linux, Mac OS X, FreeBSD, Solaris and AIX.
 
 PyInstaller's main advantages over similar tools are that
 PyInstaller works with Python 2.7 and 3.4—3.7, it builds smaller
