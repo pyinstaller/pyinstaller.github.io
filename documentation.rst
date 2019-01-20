@@ -4,6 +4,11 @@
 Documentation
 ================
 
+.. container:: bold admonition
+
+  If you have problems to get your application running, please have a
+  look at `If Things Go Wrong`_ and `How to Report Bugs`_.
+
 * Documentation for the current stable release:
   `html <https://pyinstaller.readthedocs.io/>`__,
   `pdf  <https://readthedocs.org/projects/pyinstaller/downloads/pdf/stable/>`__,
