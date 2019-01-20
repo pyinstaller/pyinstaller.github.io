@@ -9,10 +9,13 @@
   look at `If Things Go Wrong`_ and `How to Report Bugs`_, which will
   help us a lot on solving the bug.
 
+.. container:: bold larger
 
-PyInstaller is a program that freezes (packages) Python programs into
-stand-alone executables, under Windows, GNU/Linux, Mac OS X, FreeBSD,
-Solaris and AIX. Its main advantages over similar tools are that
+   |PyInstaller| freezes (packages) Python applications
+   into stand-alone executables,
+   under Windows, GNU/Linux, Mac OS X, FreeBSD, Solaris and AIX.
+
+PyInstaller's main advantages over similar tools are that
 PyInstaller works with Python 2.7 and 3.4—3.7, it builds smaller
 executables thanks to transparent compression, it is fully
 multi-platform, and use the OS support to load the dynamic libraries,

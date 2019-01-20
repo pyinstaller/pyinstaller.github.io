@@ -11,6 +11,10 @@
   font-weight: bold;
 }
 
+.larger {
+	font-size: larger;
+}
+
 div.sidenote {
     background: #ffd none repeat scroll 0 0;
     border: 1px outset #ddc;
