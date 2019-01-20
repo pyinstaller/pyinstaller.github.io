@@ -1,9 +1,7 @@
 .. _main-page:
-.. image:: logos/pyinstaller-draft1c-header-trans.png
 
-=============================================
-Welcome to PyInstaller official website
-=============================================
+.. image:: logos/pyinstaller-draft1c-header-trans.png
+   :alt: PyInstaller official website
 
 .. container:: sidenote bold
 
