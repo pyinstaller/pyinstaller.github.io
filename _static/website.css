@@ -1,3 +1,6 @@
+body > div.container {
+	max-width: 40em;
+}
 
 .navbar-text.navbar-version { display: none }
 
@@ -33,6 +36,10 @@ a.download code.download {
 #funding-pyinstaller .figure.align-center {
 	float: left;
 	padding: 0 3em;
+}
+
+.admonition {
+	max-width: 40em;  /* from body */
 }
 
 .container.fundraisingbox {
