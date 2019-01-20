@@ -26,12 +26,15 @@ Maintainers
 ~~~~~~~~~~~~~~~~
 
 PyInstaller is currently maintained by `Hartmut Goebel
-<http://www.crazy-compilers.com>`_, Martin Zibricky, David Cortesi and David
-Vierra.
+<http://www.crazy-compilers.com>`_.
 
 The project was founded by `Giovanni Bajo
 <http://giovanni.bajo.it>`_ (rasky@develer.com, `@giovannibajo
 <http://twitter.com/giovannibajo>`_).
+Former (co-)maintainers and major contributors include
+Martin Zibricky,
+David Cortesi, and
+David Vierra.
 
 We would like to thank Gordon McMillan who wrote the original Python
 Installer, and William Caban for his initial development and
