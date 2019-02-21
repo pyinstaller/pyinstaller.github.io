@@ -7,7 +7,7 @@ Funding |PyInstaller|
 
    |PyInstaller| development can only continue
    if users provide reasonable concrete funding.
-   Otherwise isues and pull-requests will be left to linger
+   Otherwise issues and pull-requests will be left to linger
    until somebody can’t afford to not fix them.
 
    While PyInstaller is a voluntary project,
