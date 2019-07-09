@@ -2,8 +2,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Features &#8212; PyInstaller bundles Python applications</title>
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -13,10 +12,6 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Downloads" href="downloads.html" />
@@ -25,6 +20,10 @@
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
 
   </head><body>
 
@@ -39,7 +38,7 @@
         </button>
         <a class="navbar-brand" href="index.html"><span><img src="_static/pyinstaller-draft1a-48_trans.png"></span>
           PyInstaller</a>
-        <span class="navbar-text navbar-version pull-left"><b>3.4</b></span>
+        <span class="navbar-text navbar-version pull-left"><b>3.5</b></span>
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
@@ -81,77 +80,87 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12 content">
+    <div class="body col-md-12 content" role="main">
       
   <div class="fundraisingbox docutils container">
+<p><strong>Help keeping PyInstaller alive:</strong>
+Maintaining <cite>PyInstaller</cite> is a huge amount of work.
 <cite>PyInstaller</cite> development can only continue
-if users provide reasonable concrete funding.
-See <a class="reference internal" href="funding.html"><span class="doc">Funding PyInstaller</span></a> for how to support <cite>PyInstaller</cite>.</div>
+if users and companies provide sustainable funding.
+See <a class="reference internal" href="funding.html"><span class="doc">Funding PyInstaller</span></a> for how to support <cite>PyInstaller</cite>.</p>
+</div>
 <div class="section" id="features">
 <span id="id1"></span><h1>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li>Packaging of Python programs into standard executables, that work
-on computers without Python installed.</li>
-<li>Multi-platform: works under<ul>
-<li>Windows (32-bit and 64-bit),</li>
-<li>GNU/Linux (32-bit and 64-bit),</li>
-<li>Mac OS X (32-bit and 64-bit),</li>
-<li>contributed suppport for FreeBSD, Solaris, HPUX, and AIX.</li>
+<li><p>Packaging of Python programs into standard executables, that work
+on computers without Python installed.</p></li>
+<li><p>Multi-platform: works under</p>
+<ul>
+<li><p>Windows (32-bit and 64-bit),</p></li>
+<li><p>GNU/Linux (32-bit and 64-bit),</p></li>
+<li><p>Mac OS X (32-bit and 64-bit),</p></li>
+<li><p>contributed suppport for FreeBSD, Solaris, HPUX, and AIX.</p></li>
 </ul>
 </li>
-<li>Multi-version: supports Python 2.7 and Python 3.3—3.6.</li>
-<li>Flexible packaging mode:<ul>
-<li>Single directory: build a directory containing an executable plus
+<li><p>Multi-version: supports Python 2.7 and Python 3.3—3.6.</p></li>
+<li><p>Flexible packaging mode:</p>
+<ul>
+<li><p>Single directory: build a directory containing an executable plus
 all the external binary modules (.dll, .pyd, .so) used by the
-program.</li>
-<li>Single file: build a single executable file, totally
-self-contained, which runs without any external dependency.</li>
-<li>Custom: you can automate PyInstaller to do whatever packaging
-mode you want through a simple script file in Python.</li>
+program.</p></li>
+<li><p>Single file: build a single executable file, totally
+self-contained, which runs without any external dependency.</p></li>
+<li><p>Custom: you can automate PyInstaller to do whatever packaging
+mode you want through a simple script file in Python.</p></li>
 </ul>
 </li>
-<li>Explicit intelligent support for many 3rd-packages (for hidden
+<li><p>Explicit intelligent support for many 3rd-packages (for hidden
 imports, external data files, etc.), to make them work with
-PyInstaller out-of-the-box (see <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/wiki/Supported-Packages">Supported Packages</a>).</li>
-<li>Full single-file Egg-support: required .egg files are automatically
+PyInstaller out-of-the-box (see <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/wiki/Supported-Packages">Supported Packages</a>).</p></li>
+<li><p>Full single-file Egg-support: required .egg files are automatically
 inspected for dependencies and bundled, and all the egg-specific features
-are supported at runtime as well (entry points, etc.).</li>
-<li>Partial directory Egg-support: required .egg directories are automatically
+are supported at runtime as well (entry points, etc.).</p></li>
+<li><p>Partial directory Egg-support: required .egg directories are automatically
 inspected for dependencies and bundled, but egg-specific features will not
-work at runtime.</li>
-<li>Automatic support for binary libraries used through <cite>ctypes</cite>
-(see the <a class="reference internal" href="#ctypes-dependency-support"><span class="std std-ref">ctypes Dependencies Support</span></a> for details).</li>
-<li>Support for automatic binary packing through the well-known
-<a class="reference external" href="https://upx.github.io/">UPX compressor</a>.</li>
-<li>Optional console mode (see standard output and standard error at
-runtime).</li>
+work at runtime.</p></li>
+<li><p>Automatic support for binary libraries used through <cite>ctypes</cite>
+(see the <a class="reference internal" href="#ctypes-dependency-support"><span class="std std-ref">ctypes Dependencies Support</span></a> for details).</p></li>
+<li><p>Support for automatic binary packing through the well-known
+<a class="reference external" href="https://upx.github.io/">UPX compressor</a>.</p></li>
+<li><p>Optional console mode (see standard output and standard error at
+runtime).</p></li>
 </ul>
 <div class="section" id="windows-specific-features">
 <h2>Windows-specific features<a class="headerlink" href="#windows-specific-features" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Support for code-signing executables (see <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/wiki/Recipe-Win-Code-Signing">Recipe Win Code Signing</a> for
-details).</li>
-<li>Full automatic support for CRTs: no need to manually distribute
+<li><p>Support for code-signing executables (see <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/wiki/Recipe-Win-Code-Signing">Recipe Win Code Signing</a> for
+details).</p>
+</li>
+<li><p>Full automatic support for CRTs: no need to manually distribute
 MSVCR*.DLL, redist installers, manifests, or anything else; <em>true</em>
 one-file applications that work everywhere! (But see the <a class="reference external" href="https://pyinstaller.readthedocs.io/en/latest/usage.html#platform-specific-notes-windows" title="(in PyInstaller v3.5.dev0)"><span class="xref std std-ref">restriction
-when building on Windows 10</span></a>.)</li>
-<li>Selectable executable icon.</li>
-<li>Fully configurable version resource section and manifests in
-executable.</li>
-<li>Configurable .exe requirement running as administrator - UAC admin.</li>
+when building on Windows 10</span></a>.)</p></li>
+<li><p>Selectable executable icon.</p></li>
+<li><p>Fully configurable version resource section and manifests in
+executable.</p></li>
+<li><p>Configurable .exe requirement running as administrator - UAC admin.</p></li>
 </ul>
 </div>
 <div class="section" id="mac-specific-features">
 <h2>Mac-specific features<a class="headerlink" href="#mac-specific-features" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Support for .app bundles.</li>
-<li>Support for code-signing: created .app bundles can be signed by
-<strong class="program">codesign</strong> (see <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/wiki/Recipe-OSX-Code-Signing">Recipe OSX Code Signing</a> for details.</li>
+<li><p>Support for .app bundles.</p></li>
+<li><p>Support for code-signing: created .app bundles can be signed by
+<strong class="program">codesign</strong> (see <a class="reference external" href="https://github.com/pyinstaller/pyinstaller/wiki/Recipe-OSX-Code-Signing">Recipe OSX Code Signing</a> for details.</p>
+</li>
 </ul>
 <div class="fundraisingbox docutils container">
+<p><strong>Help keeping PyInstaller alive:</strong>
+Maintaining <cite>PyInstaller</cite> is a huge amount of work.
 <cite>PyInstaller</cite> development can only continue
-if users provide reasonable concrete funding.
-See <a class="reference internal" href="funding.html"><span class="doc">Funding PyInstaller</span></a> for how to support <cite>PyInstaller</cite>.</div>
+if users and companies provide sustainable funding.
+See <a class="reference internal" href="funding.html"><span class="doc">Funding PyInstaller</span></a> for how to support <cite>PyInstaller</cite>.</p>
+</div>
 </div>
 <div class="section" id="ctypes-dependencies-support">
 <span id="ctypes-dependency-support"></span><h2><cite>ctypes</cite> Dependencies Support<a class="headerlink" href="#ctypes-dependencies-support" title="Permalink to this headline">¶</a></h2>
@@ -185,22 +194,22 @@ detected:</p>
 </div>
 <p>More in detail, the following restrictions apply:</p>
 <ul class="simple">
-<li><strong>Only libraries referenced by bare filenames (e.g. no leading paths) will
+<li><p><strong>Only libraries referenced by bare filenames (e.g. no leading paths) will
 be handled</strong>. Handling absolute paths would be impossible without modifying
 the bytecode as well (remember that while running frozen, <cite>ctypes</cite> would keep
 searching the library at that very absolute location, whose presence on the
 host system nobody can guarantee), and relative paths handling would require
 recreating in the frozen executable the same hierarchy of directories
 leading to the library, in addition of keeping track of which the current
-working directory is;</li>
-<li><strong>Only library paths represented by a literal string will be detected and
+working directory is;</p></li>
+<li><p><strong>Only library paths represented by a literal string will be detected and
 included in the final executable</strong> PyInstaller import detection works by
 inspecting raw Python bytecode, and since you can pass the library path to
 <cite>ctypes</cite> using a string (that can be represented by a literal in the code, but
 also by a variable, by the return value of an arbitrarily complex function,
-etc…), it’s not reasonably possible to detect <em>all</em> <cite>ctypes</cite> dependencies;</li>
-<li><strong>Only libraries referenced in the same context of `ctypes’` invocation will
-be handled</strong>.</li>
+etc…), it’s not reasonably possible to detect <em>all</em> <cite>ctypes</cite> dependencies;</p></li>
+<li><p><strong>Only libraries referenced in the same context of `ctypes’` invocation will
+be handled</strong>.</p></li>
 </ul>
 <p>We feel that it should be enough to cover most <cite>ctypes’</cite> usages, with little
 or no modification required in your code. If you think, <cite>PyInstaller</cite> should
@@ -232,8 +241,8 @@ un-frozen. Examples include using <span class="target" id="index-0"></span><code
     </p>
     <p>
         &copy; Copyright 2005–2019, PyInstaller Development Team.<br/>
-      Last updated on Feb 21, 2019.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.4.<br/>
+      Last updated on Jul 09, 2019.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.2.<br/>
     </p>
   </div>
 </footer>
