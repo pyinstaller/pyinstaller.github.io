@@ -3,6 +3,8 @@
 .. image:: logos/pyinstaller-draft1c-header-trans.png
    :alt: PyInstaller official website
 
+.. include:: _fundraisingbox.txt
+
 .. container:: bold leadtext
 
    |PyInstaller| freezes (packages) Python applications
