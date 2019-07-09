@@ -29,8 +29,9 @@ Funding by Companies
 .. container:: fundraisingbox
 
    If your company uses from |PyInstaller|,
-   please consider funding some days of full-time development
-   or conclude a support contract.
+   please consider funding work on some issue,
+   some days of full-time development
+   or conclude a maintenance contract.
 
 A grant for contiguous full-time development has the biggest impact for
 progress. Periods of 3 to 10 days allow a contributor to tackle substantial
