@@ -44,8 +44,8 @@ We also welcome your patronage on Bountysource:
 * Contribute a recurring amount to the team
 
 * Place a reasonable bounty on a specific feature
-  (Please keep in mind that high.quality development is time-consuming
-  and 100 € would get you far.)
+  (Please keep in mind that high-quality development is time-consuming
+  and 100 € wouldn't get you far.)
 
 Your contribution will go towards adding new features to |PyInstaller| and
 making sure all functionality continues to meet our high quality standards.
