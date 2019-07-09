@@ -1,8 +1,10 @@
 
 .. container:: fundraisingbox
 
+   **Help keeping PyInstaller alive:**
+   Maintaining |PyInstaller| is a huge amount of work.
    |PyInstaller| development can only continue
-   if users provide reasonable concrete funding.
+   if users and companies provide sustainable funding.
    See :doc:`funding` for how to support |PyInstaller|.
 
 .. Emacs config:

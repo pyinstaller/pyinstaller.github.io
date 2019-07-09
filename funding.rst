@@ -5,8 +5,9 @@ Funding |PyInstaller|
 
 .. container:: fundraisingbox
 
+   Maintaining |PyInstaller| is a huge amount of work.
    |PyInstaller| development can only continue
-   if users provide reasonable concrete funding.
+   if users and companies provide sustainable funding.
    Otherwise issues and pull-requests will be left to linger
    until somebody can’t afford to not fix them.
 
