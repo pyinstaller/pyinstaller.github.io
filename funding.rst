@@ -35,12 +35,6 @@ Funding by Individuals
 
 * **BountySource:** https://www.bountysource.com/teams/pyinstaller
 
-* **Bitcoin:** `1JUFjawzWDR7Tc8z9TKXstVFdjkDY9FbtK
-  <bitcoin:1JUFjawzWDR7Tc8z9TKXstVFdjkDY9FbtK>`_
-
-* **Ethereum:** `0xcefaac4c73b22c0343c93bd6fdaeb60240c14235
-  <https://etherscan.io/address/0xcefaac4c73b22c0343c93bd6fdaeb60240c14235>`_
-
 * **SEPA/bank-transfer:** If you want to fund via bank-transfer, e.g. SEPA,
   please drop `Hartmut Goebel <mailto:h.goebel@crazy-compilers.com>`_
   a note and he'll send you the account details. If you want a
@@ -80,18 +74,6 @@ making sure all functionality continues to meet our high quality standards.
 Huge thanks to all the companies and individuals who financially contributed
 to the development of |PyInstaller|. Please send a PR if you funded and
 would like to be listed on the web-site.
-
-
-.. figure:: _static/qr-bitcon-recieve.png
-   :align: center
-   :alt: QR-Code for Bitcoin address
-
-   Bitcoin address
-.. figure:: _static/qr-ethereum-address.png
-   :align: center
-   :alt: QR-Code for Ethereum address
-
-   Ethereum address
 
 
 .. include:: _common_definitions.txt
