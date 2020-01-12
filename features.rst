@@ -15,7 +15,7 @@ Features
   - Mac OS X (32-bit and 64-bit),
   - contributed suppport for FreeBSD, Solaris, HPUX, and AIX.
 
-* Multi-version: supports Python 2.7 and Python 3.3—3.6.
+* Multi-version: supports Python 2.7 and Python 3.5—3.7.
 
 * Flexible packaging mode:
 
