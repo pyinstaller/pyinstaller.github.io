@@ -78,3 +78,16 @@ img#main-page {
 		margin-top: 100px;
 	}
 }
+
+/* HACK: Each table cell needt contetn for rst to pick it up. Hide
+  dummy contant of this specificy cell */
+div#funding-pyinstaller div#current-funding-status
+thead tr:first-of-type th:first-of-type {
+	color: transparent
+}
+div#funding-pyinstaller div#current-funding-status tbody td {
+	text-align: right
+}
+div#funding-pyinstaller div#current-funding-status tbody td:first-child {
+	text-align: left
+}
