@@ -21,7 +21,7 @@ def read_income(filename):
                int(line[1]), float(line[2]),
                int(line[3]), float(line[4])]
               for line in income]
-    amount = sum(l[2] for l in income) + sum(l[4] for l in income)
+    amount = sum(l[2] for l in income[3:]) + sum(l[4] for l in income[3:])
     return amount, income
 
 
@@ -93,7 +93,8 @@ def main():
 
     amount, income = read_income("_funding_2020.cfg")
 
-    percent_funded = funding_target / (amount or 0.00001)
+    percent_funded = (amount or 0.00001) / funding_target * 100
+    print("Funded:", int(amount), "=", percent_funded, "percent")
     gen_image(args.image_filename, percent_funded)
 
     ## next_year_image_filename = "-next".join(
