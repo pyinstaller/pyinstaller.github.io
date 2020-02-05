@@ -14,6 +14,7 @@ help:
 
 clean:
 	rm -rf _build
+	rm -f _funding_status.txt _funding_table.txt
 
 upload:
 	rm -rf _build/html
@@ -37,7 +38,13 @@ venv:
 	@echo
 	@echo "Now run 'source "$(VENVDIR)"/bin/activate'"
 
+_funding_status.txt _funding_table.txt _static/funding-chart.png: _funding_2020.cfg
+	python3 gen_funding_chart.py
+
+_funding_2020.cfg:
+	:
+
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: Makefile
+%: Makefile _funding_status.txt _funding_table.txt _static/funding-chart.png
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
