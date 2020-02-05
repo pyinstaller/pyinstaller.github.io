@@ -17,3 +17,7 @@ Thumbs.db
 ._.**~
 
 _build
+_funding_*.cfg
+_funding_status.txt
+_funding_table.txt
+_static/funding-chart.png
