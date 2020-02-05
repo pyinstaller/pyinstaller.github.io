@@ -2,5 +2,7 @@
 sphinx >= 1.6
 sphinx_bootstrap_theme
 
+pillow
+
 # for release-helper scripts
 pkginfo
