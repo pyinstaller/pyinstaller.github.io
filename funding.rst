@@ -21,6 +21,24 @@ Funding |PyInstaller|
    Thanks!
 
 
+Current Funding Status
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. role:: funding-red
+
+.. include:: _funding_status.txt
+
+.. container:: row col-sm-12
+
+   .. container:: col-sm-6
+
+      .. image:: _static/funding-chart.png
+
+   .. container:: col-sm-6
+
+      .. include:: _funding_table.txt
+
+
 .. _company:
 
 Funding by Companies
