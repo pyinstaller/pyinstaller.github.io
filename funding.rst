@@ -39,6 +39,9 @@ Current Funding Status
       .. include:: _funding_table.txt
 
 
+(Number are updated about monthly.)
+
+
 .. _company:
 
 Funding by Companies
