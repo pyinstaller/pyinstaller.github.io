@@ -31,18 +31,18 @@ To install the current development version use::
 Downloads
 ~~~~~~~~~~~~~~~~
 
-.. |Release-Tar-sha256| replace:: 3730fa80d088f8bb7084d32480eb87cbb4ddb64123363763cf8f2a1378c1c4b7
+.. |Release-Tar-sha256| replace:: 970beb07115761d5e4ec317c1351b712fd90ae7f23994db914c633281f99bab0
 
-The latest stable release of PyInstaller is 3.6
+The latest stable release of PyInstaller is 4.0
 (`Change Log <https://pyinstaller.readthedocs.io/en/stable/CHANGES.html>`_).
 
 
-* **Release 3.6**: stable, supports Python 2.7, 3.5–3.7
+* **Release 4.0**: stable, supports Python 3.5–3.7
 
-  - `PyInstaller 3.6 (tar.gz)`__ (`pgp`__, sha-256: |Release-Tar-sha256|)
+  - `PyInstaller 4.0 (tar.gz)`__ (`pgp`__, sha-256: |Release-Tar-sha256|)
 
-  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.6/PyInstaller-3.6.tar.gz
-  __ https://github.com/pyinstaller/pyinstaller/releases/download/v3.6/PyInstaller-3.6.tar.gz.asc
+  __ https://github.com/pyinstaller/pyinstaller/releases/download/v4.0/PyInstaller-4.0.tar.gz
+  __ https://github.com/pyinstaller/pyinstaller/releases/download/v4.0/PyInstaller-4.0.tar.gz.asc
 
 
 * **Development**: unstable, supports Python 3.5–3.7

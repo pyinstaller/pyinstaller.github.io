@@ -18,7 +18,7 @@
   help us a lot on solving the bug.
 
 PyInstaller's main advantages over similar tools are that
-PyInstaller works with Python 2.7 and 3.5—3.7, it builds smaller
+PyInstaller works with Python 3.5—3.7, it builds smaller
 executables thanks to transparent compression, it is fully
 multi-platform, and use the OS support to load the dynamic libraries,
 thus ensuring full compatibility.
