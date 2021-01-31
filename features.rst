@@ -15,7 +15,8 @@ Features
   - Mac OS X (32-bit and 64-bit),
   - contributed suppport for FreeBSD, Solaris, HPUX, and AIX.
 
-* Multi-version: supports Python 2.7 and Python 3.5—3.7.
+* Multi-version: PyInstaller 4.2 supports Python 3.5—3.9.
+  Older versions of Python are usable with older versions of PyInstaller.
 
 * Flexible packaging mode:
 
