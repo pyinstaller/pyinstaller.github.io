@@ -23,7 +23,7 @@
 import sphinx_bootstrap_theme
 
 def setup(app):
-    app.add_stylesheet("website.css") # also can be a full URL
+    app.add_css_file("website.css") # also can be a full URL
 
 # -- General configuration ------------------------------------------------
 
