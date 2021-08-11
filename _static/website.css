@@ -44,11 +44,6 @@ a.download code.download {
 	color: inherit;
 }
 
-#funding-pyinstaller .figure.align-center {
-	float: left;
-	padding: 0 3em;
-}
-
 .admonition {
 	max-width: 40em;  /* from body */
 }
@@ -64,16 +59,6 @@ img#main-page {
 	max-width: calc(33.33333em - 30px); /* from body: 40em / 120% */
 }
 
-.container.fundraisingbox {
-	border: solid thin red;
-	border-radius: 1em;
-	font-size: 120%;
-	max-width: 33.33333em; /* 40em / 120% */
-	/* padding: 7px 7px 0; */
-	padding: 0.5em 0em 0em 1em;
-	margin: 10px auto;
-}
-
 /* work around nav-bar overlapping the content in this width-range */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 	#navbar + .container {
@@ -83,13 +68,6 @@ img#main-page {
 
 /* HACK: Each table cell needt contetn for rst to pick it up. Hide
   dummy contant of this specificy cell */
-div#funding-pyinstaller div#current-funding-status
 thead tr:first-of-type th:first-of-type {
 	color: transparent
-}
-div#funding-pyinstaller div#current-funding-status tbody td {
-	text-align: right
-}
-div#funding-pyinstaller div#current-funding-status tbody td:first-child {
-	text-align: left
 }
